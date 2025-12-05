@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" style="margin:0; padding:0; background:#f5f7fa;">
+<head>
+    <meta charset="UTF-8" />
+    <title>Appointment Confirmation</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 25px 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+            .header h1 {
+                margin: 0;
+                font-size: 22px;
+                color: #222;
+            }
+
+        .section-title {
+            font-size: 18px;
+            margin-top: 25px;
+            font-weight: bold;
+            color: #181818;
+        }
+
+        .details {
+            margin-top: 12px;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+            .details strong {
+                display: inline-block;
+                width: 130px;
+            }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+        }
+
+            .footer a {
+                text-decoration: none;
+                color: #1d4ed8;
+            }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .details strong {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h1>Appointment Confirmation</h1>
+            <!-- Optional: Add your company logo here -->
+            <!--<img src="{{CompanyLogoUrl}}" width="120" alt="Company Logo" />-->
+        </div>
+
+
+        <!-- GREETING -->
+        <p style="margin-top: 25px; font-size: 16px;">
+            Hi <strong>{{FirstName}}</strong>,
+        </p>
+
+        <p style="font-size: 15px;">
+            Your appointment has been confirmed. Below are the details:
+        </p>
+
+        <!-- APPOINTMENT DETAILS SECTION -->
+        <div class="section-title">Appointment Details</div>
+        <div class="details">
+            <p><strong>Appointment ID:</strong> {{AppointmentId}}</p>
+            <p><strong>Date:</strong> {{AppointmentDate}}</p>
+            <p><strong>Time Slot:</strong> {{AppointmentTime}}</p>
+            <p><strong>Mode:</strong> {{LocationType}}</p>
+            <p><strong>Description:</strong> {{Description}}</p>
+        </div>
+
+
+        <!-- USER DETAILS SECTION -->
+        <div class="section-title">Your Information</div>
+        <div class="details">
+            <p><strong>Name:</strong> {{FirstName}} {{LastName}}</p>
+            <p><strong>Email:</strong> {{Email}}</p>
+            <p><strong>Country:</strong> {{Country}}</p>
+            <p><strong>State:</strong> {{State}}</p>
+            <p><strong>City:</strong> {{City}}</p>
+            <p><strong>IP Address:</strong> {{IpAddress}}</p>
+        </div>
+
+
+        <!-- OPTIONAL ZOOM/WEBEX/GMEET LINK -->
+        <div class="section-title">Meeting Link</div>
+        <div class="details">
+            <p>
+                <strong>Join Link:</strong>
+                <a href="{{MeetingLink}}" target="_blank">{{MeetingLink}}</a>
+            </p>
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>If you have any questions, reply to this email or contact our support team.</p>
+            <p>&copy; {{Year}} {{CompanyName}}. All rights reserved.</p>
+            <p>
+                <a href="{{CompanyWebsite}}">Visit Website</a>
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- EF Core runtime packages -->
+		<PackageReference Include="MailKit" Version="4.14.1" />
+		<PackageReference Include="MediatR" Version="11.0.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+
+		<!-- EF Core tools for migrations (REQUIRED) -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+
+		<!-- EF Core design (REQUIRED for migrations) -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+
+		<PackageReference Include="MimeKit" Version="4.14.0" />
+		<PackageReference Include="SendGrid" Version="9.29.3" />
+
+		<!-- 🔥 FIX PACKAGE DOWNGRADES -->
+		<PackageReference Include="System.Threading" Version="4.3.0" />
+		<PackageReference Include="System.Text.Encoding.Extensions" Version="4.3.0" />
+		<PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+		<PackageReference Include="System.IO.FileSystem.Primitives" Version="4.3.0" />
+		<PackageReference Include="System.IO" Version="4.3.0" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Reference Domain project -->
+		<ProjectReference Include="..\CleanArchitecture.Application\CleanArchitecture.Application.csproj" />
+		<ProjectReference Include="..\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Email\Templates\" />
+		<Folder Include="Settings\" />
+	</ItemGroup>
+
+</Project>

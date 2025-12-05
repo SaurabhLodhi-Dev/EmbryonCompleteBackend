@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+
+	  <Nullable>enable</Nullable>
+	  <!-- enable nullable context -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Events\" />
+  </ItemGroup>
+
+</Project>

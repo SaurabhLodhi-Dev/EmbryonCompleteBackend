@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Needed for IServiceCollection -->
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.7.0" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.0" />
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+
+		<!-- 🔥 FIX PACKAGE DOWNGRADES -->
+		<PackageReference Include="System.Threading" Version="4.3.0" />
+		<PackageReference Include="System.Text.Encoding.Extensions" Version="4.3.0" />
+		<PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+		<PackageReference Include="System.IO.FileSystem.Primitives" Version="4.3.0" />
+		<PackageReference Include="System.IO" Version="4.3.0" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Common\" />
+		<Folder Include="ContactSubmissions\EventHandlers\" />
+	</ItemGroup>
+
+</Project>
