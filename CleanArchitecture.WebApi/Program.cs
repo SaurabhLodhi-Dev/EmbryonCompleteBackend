@@ -8,54 +8,47 @@ using CleanArchitecture.Infrastructure.Repositories;
 using CleanArchitecture.Infrastructure.Services;
 using CleanArchitecture.WebApi.BackgroundServices;
 using CleanArchitecture.WebApi.Extensions;
-using FluentValidation.AspNetCore;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.OpenApi.Models;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// -----------------------------------------------------
-//                 LOGGING CONFIGURATION
-// -----------------------------------------------------
+// =====================================================
+//                LOGGING CONFIGURATION
+// =====================================================
 
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 
-// File logger settings based on environment
-if (builder.Environment.IsDevelopment())
-{
-    builder.Logging.AddFile("Logs/embryon-log-{Date}.txt",
-        minimumLevel: LogLevel.Information);
-}
-else
-{
-    builder.Logging.AddFile("Logs/embryon-log-{Date}.txt",
-        minimumLevel: LogLevel.Warning);
-}
+builder.Logging.AddFile("Logs/embryon-log-{Date}.txt",
+    minimumLevel: builder.Environment.IsDevelopment()
+        ? LogLevel.Information
+        : LogLevel.Warning);
 
-// -----------------------------------------------------
-//                 SERVICE REGISTRATION
-// -----------------------------------------------------
+// =====================================================
+//              SERVICE REGISTRATION (DI)
+// =====================================================
 
+// ----------------- Controllers -----------------------
 builder.Services.AddControllers();
-// -----------------------------------------------------
-//      HTTP CLIENTS (GeoClient with timeout + user-agent)
-// -----------------------------------------------------
+
+// ----------------- HttpClient: GeoService ------------
 builder.Services.AddHttpClient("GeoClient", client =>
 {
     client.Timeout = TimeSpan.FromSeconds(3);
     client.DefaultRequestHeaders.UserAgent.ParseAdd("EmbryonGeoClient/1.0");
 });
 
-
-// FluentValidation
+// ----------------- FluentValidation ------------------
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();
 
-// Application + Infrastructure
+// ----------------- Application + Infrastructure -------
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
-// Swagger
+// ----------------- Swagger ---------------------------
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -67,59 +60,74 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+// ----------------- CAPTCHA ----------------------------
 builder.Services.AddTransient<ICaptchaValidator, CaptchaValidator>();
-
-// CAPTCHA
 builder.Services.Configure<CaptchaOptions>(
     builder.Configuration.GetSection("Captcha"));
 
-// EMAIL
+// ----------------- EMAIL -----------------------------
 builder.Services.Configure<CleanArchitecture.Application.Options.SmtpFromOptions>(
     builder.Configuration.GetSection("SmtpFrom"));
-builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection("Smtp"));
+builder.Services.Configure<SmtpOptions>(
+    builder.Configuration.GetSection("Smtp"));
 
 builder.Services.AddSingleton<IEmailQueue, EmailQueue>();
 builder.Services.AddScoped<IEmailSender, MailKitEmailSender>();
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 builder.Services.AddHostedService<EmailSenderBackgroundService>();
 
-
-//// CORS
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("AllowUI", policy =>
-//    {
-//        policy.WithOrigins("http://localhost:5173")
-//              .AllowAnyHeader()
-//              .AllowAnyMethod();
-//    });
-//});
-
+// ----------------- CORS -------------------------------
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowUI", policy =>
     {
-        policy
-            .WithOrigins("http://localhost:5173", "https://your-production-ui.com")
-            .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials();
+        policy.WithOrigins("http://localhost:5173",
+                           "https://your-production-ui.com")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
     });
 });
 
+// =====================================================
+//                 HEALTH CHECKS
+// =====================================================
+
+// Safely load connection string
+var dbConnection = builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? throw new InvalidOperationException("Missing DefaultConnection in appsettings.json");
+
+builder.Services.AddHealthChecks()
+    .AddCheck("self", () => HealthCheckResult.Healthy())
+
+    // SQL Server check
+    .AddSqlServer(
+        dbConnection,
+        name: "sql_database",
+        tags: new[] { "ready" })
+
+    // External API (Geo API)
+    .AddUrlGroup(
+        new Uri("https://ipwho.is/"),
+        name: "geo_api",
+        tags: new[] { "ready" })
+
+    // Email Queue health
+    .AddCheck<EmailQueueHealthCheck>("email_queue", tags: new[] { "ready" });
+
 var app = builder.Build();
 
-// -----------------------------------------------------
-//                 MIDDLEWARE PIPELINE
-// -----------------------------------------------------
+// =====================================================
+//                MIDDLEWARE PIPELINE
+// =====================================================
 
-// DEV MODE: verbose request logging
+// ------------ Development Logging --------------------
 if (app.Environment.IsDevelopment())
 {
     app.UseRequestLogging();
 }
 
-// Swagger always enabled
+// ------------ Swagger UI -----------------------------
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
@@ -129,21 +137,39 @@ app.UseSwaggerUI(c =>
 
 app.UseHttpsRedirection();
 
-// Detect Client Country + IP before controllers
+// ------------ GeoLocation Middleware ------------------
 app.UseGeoLocation();
 
-// ❌ REMOVE THIS (was double logging)
-// app.UseRequestLogging();
-
+// ------------ Global Error Handler --------------------
 app.UseGlobalErrorHandler();
 
 app.UseCors("AllowUI");
 
 app.UseAuthorization();
 
-// Wrap all API success responses
+// ------------ Response Wrapper -------------------------
 app.UseResponseWrapper();
 
+// ------------ Controllers ------------------------------
 app.MapControllers();
+
+// =====================================================
+//                HEALTH ENDPOINTS
+// =====================================================
+
+// Liveness – app running?
+app.MapHealthChecks("/live");
+
+// Readiness – dependencies ready? DB/API/QUEUE
+app.MapHealthChecks("/ready", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
+{
+    Predicate = h => h.Tags.Contains("ready"),
+});
+
+// Full JSON health report
+app.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
+{
+    Predicate = _ => true,
+});
 
 app.Run();

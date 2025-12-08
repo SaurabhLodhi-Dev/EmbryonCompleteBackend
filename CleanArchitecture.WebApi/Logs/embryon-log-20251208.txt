@@ -224,3 +224,438 @@ SET NOCOUNT ON;
 INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
 VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
 2025-12-08T14:26:57.5561537+05:30 0HNHM6UP14677:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/api/ContactSubmissions""" - 200 null "application/json" 3308.4821ms (74253ad3)
+2025-12-08T18:23:41.8887125+05:30  [INF] Email background service started. (8e0d769c)
+2025-12-08T18:23:42.0455133+05:30  [INF] Now listening on: "https://localhost:7281" (d826f4b8)
+2025-12-08T18:23:42.0456861+05:30  [INF] Now listening on: "http://localhost:5117" (d826f4b8)
+2025-12-08T18:23:42.1060289+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-12-08T18:23:42.1061313+05:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-12-08T18:23:42.1061607+05:30  [INF] Content root path: "D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi" (cc26f24e)
+2025-12-08T18:23:42.5020620+05:30 0HNHMB38E5OMC:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - null null (d509f86a)
+2025-12-08T18:23:42.6331686+05:30 0HNHMB38E5OMC:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.html\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":53,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:23:42.6421748+05:30 0HNHMB38E5OMC:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-08T18:23:42.6421748+05:30 0HNHMB38E5OMC:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - null null (d509f86a)
+2025-12-08T18:23:42.6503511+05:30 0HNHMB38E5OMC:00000005 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.js\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":5,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:23:42.6558282+05:30 0HNHMB38E5OMC:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-08T18:23:42.6680310+05:30 0HNHMB38E5OMC:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - 200 16533 "application/javascript; charset=utf-8" 25.393ms (74253ad3)
+2025-12-08T18:23:42.6905654+05:30 0HNHMB38E5OMC:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 34.8024ms (74253ad3)
+2025-12-08T18:23:44.3281382+05:30 0HNHMB38E5OMC:00000005 [INF] Executed DbCommand ("87"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:23:44.3281378+05:30 0HNHMB38E5OMC:00000001 [INF] Executed DbCommand ("87"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:23:44.3484442+05:30 0HNHMB38E5OMC:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 1706.4302ms (74253ad3)
+2025-12-08T18:23:44.3495818+05:30 0HNHMB38E5OMC:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1852.7372ms (74253ad3)
+2025-12-08T18:23:44.3900963+05:30 0HNHMB38E5OMC:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-12-08T18:23:44.4091314+05:30 0HNHMB38E5OMC:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/v1/swagger.json\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":18,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:23:44.4572273+05:30 0HNHMB38E5OMC:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:23:44.4578619+05:30 0HNHMB38E5OMC:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 68.0162ms (74253ad3)
+2025-12-08T18:24:33.6083044+05:30 0HNHMB38E5OMD:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html/health""" - null null (d509f86a)
+2025-12-08T18:24:33.6225171+05:30 0HNHMB38E5OMD:00000001 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:24:33.6231422+05:30 0HNHMB38E5OMD:00000001 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:24:36.7046621+05:30 0HNHMB38E5OMD:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.html/health\",\"query\":\"\",\"statusCode\":404,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":3088,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:24:36.7103841+05:30 0HNHMB38E5OMD:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:24:36.7106939+05:30 0HNHMB38E5OMD:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html/health""" - 404 null null 3102.7378ms (74253ad3)
+2025-12-08T18:24:36.7121735+05:30 0HNHMB38E5OMD:00000001 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7281""""/swagger/index.html/health", Response status code: 404 (e353595a)
+2025-12-08T18:25:14.0082783+05:30 0HNHMB38E5OME:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/live""" - null null (d509f86a)
+2025-12-08T18:25:14.0108447+05:30 0HNHMB38E5OME:00000001 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:25:14.0109016+05:30 0HNHMB38E5OME:00000001 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:25:14.3327446+05:30 0HNHMB38E5OME:00000001 [INF] Received HTTP response headers after 316.791ms - 200 (f0742c1f)
+2025-12-08T18:25:14.3328838+05:30 0HNHMB38E5OME:00000001 [INF] End processing HTTP request after 322.0315ms - 200 (7656b38e)
+2025-12-08T18:25:14.3402761+05:30 0HNHMB38E5OME:00000001 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:25:14.3476514+05:30 0HNHMB38E5OME:00000001 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:25:14.3478788+05:30 0HNHMB38E5OME:00000001 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:25:14.4805212+05:30 0HNHMB38E5OME:00000001 [INF] Received HTTP response headers after 132.5705ms - 200 (f0742c1f)
+2025-12-08T18:25:14.4805832+05:30 0HNHMB38E5OME:00000001 [INF] End processing HTTP request after 133.0431ms - 200 (7656b38e)
+2025-12-08T18:25:14.4856281+05:30 0HNHMB38E5OME:00000001 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:25:14.4881959+05:30 0HNHMB38E5OME:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/live\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":477,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:25:14.4979666+05:30 0HNHMB38E5OME:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:25:14.4983367+05:30 0HNHMB38E5OME:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/live""" - 200 null "application/json" 490.4095ms (74253ad3)
+2025-12-08T18:25:14.5263443+05:30 0HNHMB38E5OME:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/favicon.ico""" - null null (d509f86a)
+2025-12-08T18:25:14.5266170+05:30 0HNHMB38E5OME:00000003 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:25:14.5266441+05:30 0HNHMB38E5OME:00000003 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:25:14.8297293+05:30 0HNHMB38E5OME:00000003 [INF] Received HTTP response headers after 303.0236ms - 200 (f0742c1f)
+2025-12-08T18:25:14.8298338+05:30 0HNHMB38E5OME:00000003 [INF] End processing HTTP request after 303.2492ms - 200 (7656b38e)
+2025-12-08T18:25:14.8302890+05:30 0HNHMB38E5OME:00000003 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/favicon.ico\",\"query\":\"\",\"statusCode\":404,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":303,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:25:14.8320625+05:30 0HNHMB38E5OME:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:25:14.8323028+05:30 0HNHMB38E5OME:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/favicon.ico""" - 404 0 null 306.0018ms (74253ad3)
+2025-12-08T18:25:14.8323590+05:30 0HNHMB38E5OME:00000003 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7281""""/favicon.ico", Response status code: 404 (e353595a)
+2025-12-08T18:25:33.7608903+05:30 0HNHMB38E5OME:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/ready""" - null null (d509f86a)
+2025-12-08T18:25:33.7625892+05:30 0HNHMB38E5OME:00000005 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:25:33.7626236+05:30 0HNHMB38E5OME:00000005 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:25:34.0628262+05:30 0HNHMB38E5OME:00000005 [INF] Received HTTP response headers after 300.1419ms - 200 (f0742c1f)
+2025-12-08T18:25:34.0628838+05:30 0HNHMB38E5OME:00000005 [INF] End processing HTTP request after 300.33ms - 200 (7656b38e)
+2025-12-08T18:25:34.0630735+05:30 0HNHMB38E5OME:00000005 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:25:34.0641765+05:30 0HNHMB38E5OME:00000005 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:25:34.0641995+05:30 0HNHMB38E5OME:00000005 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:25:34.1645247+05:30 0HNHMB38E5OME:00000005 [INF] Received HTTP response headers after 100.2682ms - 200 (f0742c1f)
+2025-12-08T18:25:34.1645703+05:30 0HNHMB38E5OME:00000005 [INF] End processing HTTP request after 100.425ms - 200 (7656b38e)
+2025-12-08T18:25:34.1648951+05:30 0HNHMB38E5OME:00000005 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:25:34.1650884+05:30 0HNHMB38E5OME:00000005 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/ready\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":402,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:25:34.1707656+05:30 0HNHMB38E5OME:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:25:34.1711702+05:30 0HNHMB38E5OME:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/ready""" - 200 null "application/json" 410.259ms (74253ad3)
+2025-12-08T18:25:48.1135058+05:30 0HNHMB38E5OME:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/ready""" - null null (d509f86a)
+2025-12-08T18:25:48.1161591+05:30 0HNHMB38E5OME:00000007 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:25:48.1162641+05:30 0HNHMB38E5OME:00000007 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:25:48.4206336+05:30 0HNHMB38E5OME:00000007 [INF] Received HTTP response headers after 304.2956ms - 200 (f0742c1f)
+2025-12-08T18:25:48.4206896+05:30 0HNHMB38E5OME:00000007 [INF] End processing HTTP request after 304.563ms - 200 (7656b38e)
+2025-12-08T18:25:48.4208897+05:30 0HNHMB38E5OME:00000007 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:25:48.4214577+05:30 0HNHMB38E5OME:00000007 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:25:48.4214854+05:30 0HNHMB38E5OME:00000007 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:25:48.5572855+05:30 0HNHMB38E5OME:00000007 [INF] Received HTTP response headers after 135.6824ms - 200 (f0742c1f)
+2025-12-08T18:25:48.5574638+05:30 0HNHMB38E5OME:00000007 [INF] End processing HTTP request after 135.9944ms - 200 (7656b38e)
+2025-12-08T18:25:48.5578382+05:30 0HNHMB38E5OME:00000007 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:25:48.5583941+05:30 0HNHMB38E5OME:00000007 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/ready\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":442,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:25:48.5632837+05:30 0HNHMB38E5OME:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:25:48.5636158+05:30 0HNHMB38E5OME:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/ready""" - 200 null "application/json" 450.3464ms (74253ad3)
+2025-12-08T18:25:58.3852328+05:30 0HNHMB38E5OME:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - null null (d509f86a)
+2025-12-08T18:25:58.3864695+05:30 0HNHMB38E5OME:00000009 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:25:58.3865481+05:30 0HNHMB38E5OME:00000009 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:25:58.7018645+05:30 0HNHMB38E5OME:00000009 [INF] Received HTTP response headers after 315.209ms - 200 (f0742c1f)
+2025-12-08T18:25:58.7019844+05:30 0HNHMB38E5OME:00000009 [INF] End processing HTTP request after 315.5218ms - 200 (7656b38e)
+2025-12-08T18:25:58.7024039+05:30 0HNHMB38E5OME:00000009 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:25:58.7040693+05:30 0HNHMB38E5OME:00000009 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:25:58.7043549+05:30 0HNHMB38E5OME:00000009 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:25:58.8444052+05:30 0HNHMB38E5OME:00000009 [INF] Received HTTP response headers after 139.6539ms - 200 (f0742c1f)
+2025-12-08T18:25:58.8445880+05:30 0HNHMB38E5OME:00000009 [INF] End processing HTTP request after 140.7614ms - 200 (7656b38e)
+2025-12-08T18:25:58.8454105+05:30 0HNHMB38E5OME:00000009 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:25:58.8460482+05:30 0HNHMB38E5OME:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/health\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":459,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:25:58.8523706+05:30 0HNHMB38E5OME:00000009 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:25:58.8526848+05:30 0HNHMB38E5OME:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - 200 null "application/json" 467.622ms (74253ad3)
+2025-12-08T18:26:03.9515064+05:30 0HNHMB38E5OME:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - null null (d509f86a)
+2025-12-08T18:26:03.9526354+05:30 0HNHMB38E5OME:0000000B [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:26:03.9526625+05:30 0HNHMB38E5OME:0000000B [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:26:04.2519420+05:30 0HNHMB38E5OME:0000000B [INF] Received HTTP response headers after 299.2428ms - 200 (f0742c1f)
+2025-12-08T18:26:04.2519727+05:30 0HNHMB38E5OME:0000000B [INF] End processing HTTP request after 299.3574ms - 200 (7656b38e)
+2025-12-08T18:26:04.2521230+05:30 0HNHMB38E5OME:0000000B [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:26:04.2525287+05:30 0HNHMB38E5OME:0000000B [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:26:04.2525922+05:30 0HNHMB38E5OME:0000000B [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:26:04.2855935+05:30 0HNHMB38E5OME:0000000B [INF] Received HTTP response headers after 32.8786ms - 200 (f0742c1f)
+2025-12-08T18:26:04.2857164+05:30 0HNHMB38E5OME:0000000B [INF] End processing HTTP request after 33.2124ms - 200 (7656b38e)
+2025-12-08T18:26:04.2860821+05:30 0HNHMB38E5OME:0000000B [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:26:04.2866288+05:30 0HNHMB38E5OME:0000000B [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/health\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":333,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:26:04.2925466+05:30 0HNHMB38E5OME:0000000B [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:26:04.2927580+05:30 0HNHMB38E5OME:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - 200 null "application/json" 341.3733ms (74253ad3)
+2025-12-08T18:27:48.4691298+05:30  [INF] Email background service started. (8e0d769c)
+2025-12-08T18:27:48.6217808+05:30  [INF] Now listening on: "https://localhost:7281" (d826f4b8)
+2025-12-08T18:27:48.6218817+05:30  [INF] Now listening on: "http://localhost:5117" (d826f4b8)
+2025-12-08T18:27:48.6599247+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-12-08T18:27:48.6600051+05:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-12-08T18:27:48.6600221+05:30  [INF] Content root path: "D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi" (cc26f24e)
+2025-12-08T18:27:49.3508864+05:30 0HNHMB5HUBUAK:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - null null (d509f86a)
+2025-12-08T18:27:49.4855138+05:30 0HNHMB5HUBUAK:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.html\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":52,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:27:49.5064481+05:30 0HNHMB5HUBUAK:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - null null (d509f86a)
+2025-12-08T18:27:49.5087719+05:30 0HNHMB5HUBUAK:00000003 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.js\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":1,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:27:49.5099928+05:30 0HNHMB5HUBUAK:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-08T18:27:49.5314529+05:30 0HNHMB5HUBUAK:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - 200 16533 "application/javascript; charset=utf-8" 21.0871ms (74253ad3)
+2025-12-08T18:27:49.5365472+05:30 0HNHMB5HUBUAK:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-08T18:27:49.5682223+05:30 0HNHMB5HUBUAK:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 31.7712ms (74253ad3)
+2025-12-08T18:27:50.4427555+05:30 0HNHMB5HUBUAK:00000001 [INF] Executed DbCommand ("39"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:27:50.4427563+05:30 0HNHMB5HUBUAK:00000003 [INF] Executed DbCommand ("39"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:27:50.4661849+05:30 0HNHMB5HUBUAK:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 959.8241ms (74253ad3)
+2025-12-08T18:27:50.4672413+05:30 0HNHMB5HUBUAK:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1121.6004ms (74253ad3)
+2025-12-08T18:27:50.5100574+05:30 0HNHMB5HUBUAK:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-12-08T18:27:50.5313823+05:30 0HNHMB5HUBUAK:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/v1/swagger.json\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":20,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:27:50.5783211+05:30 0HNHMB5HUBUAK:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:27:50.5787522+05:30 0HNHMB5HUBUAK:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 68.9143ms (74253ad3)
+2025-12-08T18:28:11.6343695+05:30 0HNHMB5HUBUAK:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - null null (d509f86a)
+2025-12-08T18:28:11.6447484+05:30 0HNHMB5HUBUAK:0000000B [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:28:11.6454706+05:30 0HNHMB5HUBUAK:0000000B [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:28:12.0005068+05:30 0HNHMB5HUBUAK:0000000B [INF] Received HTTP response headers after 349.6461ms - 200 (f0742c1f)
+2025-12-08T18:28:12.0010241+05:30 0HNHMB5HUBUAK:0000000B [INF] End processing HTTP request after 360.8965ms - 200 (7656b38e)
+2025-12-08T18:28:12.0096774+05:30 0HNHMB5HUBUAK:0000000B [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:28:12.0247702+05:30 0HNHMB5HUBUAK:0000000B [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:28:12.0250094+05:30 0HNHMB5HUBUAK:0000000B [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:28:12.1882407+05:30 0HNHMB5HUBUAK:0000000B [INF] Received HTTP response headers after 163.1657ms - 200 (f0742c1f)
+2025-12-08T18:28:12.1883121+05:30 0HNHMB5HUBUAK:0000000B [INF] End processing HTTP request after 163.5905ms - 200 (7656b38e)
+2025-12-08T18:28:12.1941304+05:30 0HNHMB5HUBUAK:0000000B [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:28:12.1948607+05:30 0HNHMB5HUBUAK:0000000B [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/health\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":556,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:28:12.1991166+05:30 0HNHMB5HUBUAK:0000000B [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:28:12.1994350+05:30 0HNHMB5HUBUAK:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - 200 null "text/plain" 565.1703ms (74253ad3)
+2025-12-08T18:28:12.2252570+05:30 0HNHMB5HUBUAK:0000000D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/favicon.ico""" - null null (d509f86a)
+2025-12-08T18:28:12.2257496+05:30 0HNHMB5HUBUAK:0000000D [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:28:12.2258006+05:30 0HNHMB5HUBUAK:0000000D [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:28:12.5307763+05:30 0HNHMB5HUBUAK:0000000D [INF] Received HTTP response headers after 304.9178ms - 200 (f0742c1f)
+2025-12-08T18:28:12.5308598+05:30 0HNHMB5HUBUAK:0000000D [INF] End processing HTTP request after 305.1429ms - 200 (7656b38e)
+2025-12-08T18:28:12.5315218+05:30 0HNHMB5HUBUAK:0000000D [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/favicon.ico\",\"query\":\"\",\"statusCode\":404,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":306,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:28:12.5334151+05:30 0HNHMB5HUBUAK:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:28:12.5336757+05:30 0HNHMB5HUBUAK:0000000D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/favicon.ico""" - 404 0 null 308.6552ms (74253ad3)
+2025-12-08T18:28:12.5340448+05:30 0HNHMB5HUBUAK:0000000D [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7281""""/favicon.ico", Response status code: 404 (e353595a)
+2025-12-08T18:28:18.7911302+05:30 0HNHMB5HUBUAL:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - null null (d509f86a)
+2025-12-08T18:28:18.7926358+05:30 0HNHMB5HUBUAL:00000001 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:28:18.7926657+05:30 0HNHMB5HUBUAL:00000001 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:28:19.0901228+05:30 0HNHMB5HUBUAL:00000001 [INF] Received HTTP response headers after 297.3215ms - 200 (f0742c1f)
+2025-12-08T18:28:19.0903326+05:30 0HNHMB5HUBUAL:00000001 [INF] End processing HTTP request after 297.6987ms - 200 (7656b38e)
+2025-12-08T18:28:19.0918471+05:30 0HNHMB5HUBUAL:00000001 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:28:19.0938931+05:30 0HNHMB5HUBUAL:00000001 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:28:19.0946468+05:30 0HNHMB5HUBUAL:00000001 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:28:19.1252671+05:30 0HNHMB5HUBUAL:00000001 [INF] Received HTTP response headers after 30.3781ms - 200 (f0742c1f)
+2025-12-08T18:28:19.1255579+05:30 0HNHMB5HUBUAL:00000001 [INF] End processing HTTP request after 31.9479ms - 200 (7656b38e)
+2025-12-08T18:28:19.1271162+05:30 0HNHMB5HUBUAL:00000001 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:28:19.1275957+05:30 0HNHMB5HUBUAL:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/health\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":334,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:28:19.1318899+05:30 0HNHMB5HUBUAL:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:28:19.1321093+05:30 0HNHMB5HUBUAL:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - 200 null "text/plain" 341.1846ms (74253ad3)
+2025-12-08T18:28:22.5931692+05:30 0HNHMB5HUBUAL:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/ready""" - null null (d509f86a)
+2025-12-08T18:28:22.5949337+05:30 0HNHMB5HUBUAL:00000003 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:28:22.5949694+05:30 0HNHMB5HUBUAL:00000003 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:28:22.9024819+05:30 0HNHMB5HUBUAL:00000003 [INF] Received HTTP response headers after 307.4634ms - 200 (f0742c1f)
+2025-12-08T18:28:22.9025300+05:30 0HNHMB5HUBUAL:00000003 [INF] End processing HTTP request after 307.6333ms - 200 (7656b38e)
+2025-12-08T18:28:22.9027071+05:30 0HNHMB5HUBUAL:00000003 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:28:22.9034355+05:30 0HNHMB5HUBUAL:00000003 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:28:22.9034794+05:30 0HNHMB5HUBUAL:00000003 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:28:22.9331237+05:30 0HNHMB5HUBUAL:00000003 [INF] Received HTTP response headers after 29.5936ms - 200 (f0742c1f)
+2025-12-08T18:28:22.9331754+05:30 0HNHMB5HUBUAL:00000003 [INF] End processing HTTP request after 29.7593ms - 200 (7656b38e)
+2025-12-08T18:28:22.9333847+05:30 0HNHMB5HUBUAL:00000003 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:28:22.9334918+05:30 0HNHMB5HUBUAL:00000003 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/ready\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":338,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:28:22.9387201+05:30 0HNHMB5HUBUAL:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:28:22.9390712+05:30 0HNHMB5HUBUAL:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/ready""" - 200 null "text/plain" 346.0696ms (74253ad3)
+2025-12-08T18:28:27.0566874+05:30 0HNHMB5HUBUAL:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/ready""" - null null (d509f86a)
+2025-12-08T18:28:27.0582604+05:30 0HNHMB5HUBUAL:00000005 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:28:27.0582814+05:30 0HNHMB5HUBUAL:00000005 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:28:27.3649256+05:30 0HNHMB5HUBUAL:00000005 [INF] Received HTTP response headers after 306.6067ms - 200 (f0742c1f)
+2025-12-08T18:28:27.3649547+05:30 0HNHMB5HUBUAL:00000005 [INF] End processing HTTP request after 306.7207ms - 200 (7656b38e)
+2025-12-08T18:28:27.3651080+05:30 0HNHMB5HUBUAL:00000005 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:28:27.3653845+05:30 0HNHMB5HUBUAL:00000005 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:28:27.3655616+05:30 0HNHMB5HUBUAL:00000005 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:28:27.3939256+05:30 0HNHMB5HUBUAL:00000005 [INF] Received HTTP response headers after 28.2499ms - 200 (f0742c1f)
+2025-12-08T18:28:27.3939600+05:30 0HNHMB5HUBUAL:00000005 [INF] End processing HTTP request after 28.6287ms - 200 (7656b38e)
+2025-12-08T18:28:27.3941098+05:30 0HNHMB5HUBUAL:00000005 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:28:27.3942300+05:30 0HNHMB5HUBUAL:00000005 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/ready\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":336,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:28:27.3965857+05:30 0HNHMB5HUBUAL:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:28:27.3968206+05:30 0HNHMB5HUBUAL:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/ready""" - 200 null "text/plain" 340.3402ms (74253ad3)
+2025-12-08T18:28:33.2984734+05:30 0HNHMB5HUBUAL:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/live""" - null null (d509f86a)
+2025-12-08T18:28:33.2995640+05:30 0HNHMB5HUBUAL:00000007 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:28:33.2995815+05:30 0HNHMB5HUBUAL:00000007 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:28:33.6042430+05:30 0HNHMB5HUBUAL:00000007 [INF] Received HTTP response headers after 304.6252ms - 200 (f0742c1f)
+2025-12-08T18:28:33.6042725+05:30 0HNHMB5HUBUAL:00000007 [INF] End processing HTTP request after 304.7295ms - 200 (7656b38e)
+2025-12-08T18:28:33.6044364+05:30 0HNHMB5HUBUAL:00000007 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:28:33.6051833+05:30 0HNHMB5HUBUAL:00000007 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:28:33.6052041+05:30 0HNHMB5HUBUAL:00000007 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:28:33.6351419+05:30 0HNHMB5HUBUAL:00000007 [INF] Received HTTP response headers after 29.8463ms - 200 (f0742c1f)
+2025-12-08T18:28:33.6352661+05:30 0HNHMB5HUBUAL:00000007 [INF] End processing HTTP request after 30.0813ms - 200 (7656b38e)
+2025-12-08T18:28:33.6357112+05:30 0HNHMB5HUBUAL:00000007 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:28:33.6361486+05:30 0HNHMB5HUBUAL:00000007 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/live\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":336,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:28:33.6410348+05:30 0HNHMB5HUBUAL:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:28:33.6413977+05:30 0HNHMB5HUBUAL:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/live""" - 200 null "text/plain" 343.1035ms (74253ad3)
+2025-12-08T18:28:42.5608666+05:30 0HNHMB5HUBUAL:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/live""" - null null (d509f86a)
+2025-12-08T18:28:42.5622006+05:30 0HNHMB5HUBUAL:00000009 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:28:42.5622208+05:30 0HNHMB5HUBUAL:00000009 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:28:42.8639044+05:30 0HNHMB5HUBUAL:00000009 [INF] Received HTTP response headers after 301.6495ms - 200 (f0742c1f)
+2025-12-08T18:28:42.8639430+05:30 0HNHMB5HUBUAL:00000009 [INF] End processing HTTP request after 301.7571ms - 200 (7656b38e)
+2025-12-08T18:28:42.8640999+05:30 0HNHMB5HUBUAL:00000009 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:28:42.8643949+05:30 0HNHMB5HUBUAL:00000009 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:28:42.8644517+05:30 0HNHMB5HUBUAL:00000009 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:28:42.8935218+05:30 0HNHMB5HUBUAL:00000009 [INF] Received HTTP response headers after 29.0282ms - 200 (f0742c1f)
+2025-12-08T18:28:42.8935536+05:30 0HNHMB5HUBUAL:00000009 [INF] End processing HTTP request after 29.2486ms - 200 (7656b38e)
+2025-12-08T18:28:42.8936967+05:30 0HNHMB5HUBUAL:00000009 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:28:42.8938253+05:30 0HNHMB5HUBUAL:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/live\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":331,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:28:42.8954098+05:30 0HNHMB5HUBUAL:00000009 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:28:42.8956942+05:30 0HNHMB5HUBUAL:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/live""" - 200 null "text/plain" 334.8202ms (74253ad3)
+2025-12-08T18:28:54.6005394+05:30  [INF] Email background service started. (8e0d769c)
+2025-12-08T18:28:54.7441366+05:30  [INF] Now listening on: "https://localhost:7281" (d826f4b8)
+2025-12-08T18:28:54.7442270+05:30  [INF] Now listening on: "http://localhost:5117" (d826f4b8)
+2025-12-08T18:28:54.7882761+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-12-08T18:28:54.7883543+05:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-12-08T18:28:54.7883824+05:30  [INF] Content root path: "D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi" (cc26f24e)
+2025-12-08T18:28:55.0604966+05:30 0HNHMB65IBK48:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - null null (d509f86a)
+2025-12-08T18:28:55.1882043+05:30 0HNHMB65IBK48:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.html\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":51,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:28:55.1952852+05:30 0HNHMB65IBK48:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - null null (d509f86a)
+2025-12-08T18:28:55.1952851+05:30 0HNHMB65IBK48:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-08T18:28:55.1973329+05:30 0HNHMB65IBK48:00000005 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.js\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":0,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:28:55.2091646+05:30 0HNHMB65IBK48:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - 200 16533 "application/javascript; charset=utf-8" 13.3902ms (74253ad3)
+2025-12-08T18:28:55.2106357+05:30 0HNHMB65IBK48:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-08T18:28:55.2467388+05:30 0HNHMB65IBK48:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 36.2199ms (74253ad3)
+2025-12-08T18:28:56.1024464+05:30 0HNHMB65IBK48:00000001 [INF] Executed DbCommand ("34"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:28:56.1024420+05:30 0HNHMB65IBK48:00000005 [INF] Executed DbCommand ("34"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:28:56.1244554+05:30 0HNHMB65IBK48:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 929.3175ms (74253ad3)
+2025-12-08T18:28:56.1256262+05:30 0HNHMB65IBK48:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1069.8812ms (74253ad3)
+2025-12-08T18:28:56.1619841+05:30 0HNHMB65IBK48:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-12-08T18:28:56.1814247+05:30 0HNHMB65IBK48:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/v1/swagger.json\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\",\"durationMs\":18,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:28:56.2318670+05:30 0HNHMB65IBK48:00000009 [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:28:56.2322664+05:30 0HNHMB65IBK48:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 70.4838ms (74253ad3)
+2025-12-08T18:29:06.1416736+05:30 0HNHMB65IBK49:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/live""" - null null (d509f86a)
+2025-12-08T18:29:06.1549076+05:30 0HNHMB65IBK49:00000001 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:29:06.1558086+05:30 0HNHMB65IBK49:00000001 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:29:06.5160726+05:30 0HNHMB65IBK49:00000001 [INF] Received HTTP response headers after 355.4249ms - 200 (f0742c1f)
+2025-12-08T18:29:06.5164925+05:30 0HNHMB65IBK49:00000001 [INF] End processing HTTP request after 367.2405ms - 200 (7656b38e)
+2025-12-08T18:29:06.5254003+05:30 0HNHMB65IBK49:00000001 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:29:06.5317267+05:30 0HNHMB65IBK49:00000001 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:29:06.5319227+05:30 0HNHMB65IBK49:00000001 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:29:06.6616120+05:30 0HNHMB65IBK49:00000001 [INF] Received HTTP response headers after 129.6113ms - 200 (f0742c1f)
+2025-12-08T18:29:06.6616924+05:30 0HNHMB65IBK49:00000001 [INF] End processing HTTP request after 129.9969ms - 200 (7656b38e)
+2025-12-08T18:29:06.6673306+05:30 0HNHMB65IBK49:00000001 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:29:06.6679707+05:30 0HNHMB65IBK49:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/live\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":520,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:29:06.6703300+05:30 0HNHMB65IBK49:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:29:06.6705997+05:30 0HNHMB65IBK49:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/live""" - 200 null "text/plain" 530.7724ms (74253ad3)
+2025-12-08T18:29:15.8268216+05:30 0HNHMB65IBK49:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/ready""" - null null (d509f86a)
+2025-12-08T18:29:15.8292775+05:30 0HNHMB65IBK49:00000003 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:29:15.8294195+05:30 0HNHMB65IBK49:00000003 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:29:16.1434610+05:30 0HNHMB65IBK49:00000003 [INF] Received HTTP response headers after 313.9654ms - 200 (f0742c1f)
+2025-12-08T18:29:16.1435218+05:30 0HNHMB65IBK49:00000003 [INF] End processing HTTP request after 314.3299ms - 200 (7656b38e)
+2025-12-08T18:29:16.1440551+05:30 0HNHMB65IBK49:00000003 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:29:16.1448120+05:30 0HNHMB65IBK49:00000003 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:29:16.1448560+05:30 0HNHMB65IBK49:00000003 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:29:16.1751288+05:30 0HNHMB65IBK49:00000003 [INF] Received HTTP response headers after 30.1918ms - 200 (f0742c1f)
+2025-12-08T18:29:16.1751956+05:30 0HNHMB65IBK49:00000003 [INF] End processing HTTP request after 30.4404ms - 200 (7656b38e)
+2025-12-08T18:29:16.1755202+05:30 0HNHMB65IBK49:00000003 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:29:16.1756406+05:30 0HNHMB65IBK49:00000003 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/ready\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":346,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:29:16.1801418+05:30 0HNHMB65IBK49:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:29:16.1804164+05:30 0HNHMB65IBK49:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/ready""" - 200 null "text/plain" 353.9426ms (74253ad3)
+2025-12-08T18:29:24.9469036+05:30 0HNHMB65IBK49:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - null null (d509f86a)
+2025-12-08T18:29:24.9489542+05:30 0HNHMB65IBK49:00000005 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:29:24.9490123+05:30 0HNHMB65IBK49:00000005 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:29:25.2502569+05:30 0HNHMB65IBK49:00000005 [INF] Received HTTP response headers after 301.1538ms - 200 (f0742c1f)
+2025-12-08T18:29:25.2504662+05:30 0HNHMB65IBK49:00000005 [INF] End processing HTTP request after 301.5603ms - 200 (7656b38e)
+2025-12-08T18:29:25.2512046+05:30 0HNHMB65IBK49:00000005 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:29:25.2525494+05:30 0HNHMB65IBK49:00000005 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:29:25.2526589+05:30 0HNHMB65IBK49:00000005 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:29:25.2826369+05:30 0HNHMB65IBK49:00000005 [INF] Received HTTP response headers after 29.9141ms - 200 (f0742c1f)
+2025-12-08T18:29:25.2827070+05:30 0HNHMB65IBK49:00000005 [INF] End processing HTTP request after 30.2109ms - 200 (7656b38e)
+2025-12-08T18:29:25.2828671+05:30 0HNHMB65IBK49:00000005 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:29:25.2830243+05:30 0HNHMB65IBK49:00000005 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/health\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":334,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:29:25.2848958+05:30 0HNHMB65IBK49:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:29:25.2851268+05:30 0HNHMB65IBK49:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - 200 null "text/plain" 338.2715ms (74253ad3)
+2025-12-08T18:29:27.3656801+05:30 0HNHMB65IBK49:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/.well-known/appspecific/com.chrome.devtools.json""" - null null (d509f86a)
+2025-12-08T18:29:27.3662539+05:30 0HNHMB65IBK49:00000007 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:29:27.3663023+05:30 0HNHMB65IBK49:00000007 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:29:27.6788106+05:30 0HNHMB65IBK49:00000007 [INF] Received HTTP response headers after 312.3138ms - 200 (f0742c1f)
+2025-12-08T18:29:27.6789684+05:30 0HNHMB65IBK49:00000007 [INF] End processing HTTP request after 312.7239ms - 200 (7656b38e)
+2025-12-08T18:29:27.6805751+05:30 0HNHMB65IBK49:00000007 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/.well-known/appspecific/com.chrome.devtools.json\",\"query\":\"\",\"statusCode\":404,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":314,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:29:27.6875992+05:30 0HNHMB65IBK49:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:29:27.6885365+05:30 0HNHMB65IBK49:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/.well-known/appspecific/com.chrome.devtools.json""" - 404 0 null 322.966ms (74253ad3)
+2025-12-08T18:29:27.6905157+05:30 0HNHMB65IBK49:00000007 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7281""""/.well-known/appspecific/com.chrome.devtools.json", Response status code: 404 (e353595a)
+2025-12-08T18:29:29.2986867+05:30 0HNHMB65IBK49:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - null null (d509f86a)
+2025-12-08T18:29:29.2998866+05:30 0HNHMB65IBK49:00000009 [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:29:29.2999081+05:30 0HNHMB65IBK49:00000009 [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:29:29.5937354+05:30 0HNHMB65IBK49:00000009 [INF] Received HTTP response headers after 293.7812ms - 200 (f0742c1f)
+2025-12-08T18:29:29.5937688+05:30 0HNHMB65IBK49:00000009 [INF] End processing HTTP request after 293.9054ms - 200 (7656b38e)
+2025-12-08T18:29:29.5939320+05:30 0HNHMB65IBK49:00000009 [INF] Executing endpoint '"Health checks"' (500cc934)
+2025-12-08T18:29:29.5943195+05:30 0HNHMB65IBK49:00000009 [INF] Start processing HTTP request "GET" "https://ipwho.is/" (338f1c77)
+2025-12-08T18:29:29.5943452+05:30 0HNHMB65IBK49:00000009 [INF] Sending HTTP request "GET" "https://ipwho.is/" (2e7ac211)
+2025-12-08T18:29:29.6247216+05:30 0HNHMB65IBK49:00000009 [INF] Received HTTP response headers after 30.3178ms - 200 (f0742c1f)
+2025-12-08T18:29:29.6247854+05:30 0HNHMB65IBK49:00000009 [INF] End processing HTTP request after 30.4961ms - 200 (7656b38e)
+2025-12-08T18:29:29.6249580+05:30 0HNHMB65IBK49:00000009 [INF] Executed endpoint '"Health checks"' (99874f2b)
+2025-12-08T18:29:29.6250539+05:30 0HNHMB65IBK49:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/health\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":325,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:29:29.6272895+05:30 0HNHMB65IBK49:00000009 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:29:29.6275021+05:30 0HNHMB65IBK49:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/health""" - 200 null "text/plain" 329.0097ms (74253ad3)
+2025-12-08T18:29:29.6405594+05:30 0HNHMB65IBK49:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/.well-known/appspecific/com.chrome.devtools.json""" - null null (d509f86a)
+2025-12-08T18:29:29.6407747+05:30 0HNHMB65IBK49:0000000B [INF] Start processing HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (338f1c77)
+2025-12-08T18:29:29.6407937+05:30 0HNHMB65IBK49:0000000B [INF] Sending HTTP request "GET" "https://ipapi.co/0.0.0.1/json/" (2e7ac211)
+2025-12-08T18:29:29.6484316+05:30 0HNHMB65IBK49:0000000B [INF] Received HTTP response headers after 7.583ms - 429 (f0742c1f)
+2025-12-08T18:29:29.6484897+05:30 0HNHMB65IBK49:0000000B [INF] End processing HTTP request after 7.7275ms - 429 (7656b38e)
+2025-12-08T18:29:29.6487203+05:30 0HNHMB65IBK49:0000000B [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/.well-known/appspecific/com.chrome.devtools.json\",\"query\":\"\",\"statusCode\":404,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":7,\"requestBody\":null}" (663ceef5)
+2025-12-08T18:29:29.6509590+05:30 0HNHMB65IBK49:0000000B [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-08T18:29:29.6512831+05:30 0HNHMB65IBK49:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/.well-known/appspecific/com.chrome.devtools.json""" - 404 0 null 10.9377ms (74253ad3)
+2025-12-08T18:29:29.6513399+05:30 0HNHMB65IBK49:0000000B [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7281""""/.well-known/appspecific/com.chrome.devtools.json", Response status code: 404 (e353595a)

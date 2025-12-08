@@ -180,7 +180,7 @@ namespace CleanArchitecture.Application.Services
         /// Returns a single contact submission by ID.
         /// Throws <see cref="KeyNotFoundException"/> if not found.
         /// </summary>
-        public async Task<ContactSubmissionDto> GetByIdAsync(Guid id)
+        public async Task<ContactSubmissionDto?> GetByIdAsync(Guid id)
         {
             var entity = await _repository.GetByIdAsync(id);
 
