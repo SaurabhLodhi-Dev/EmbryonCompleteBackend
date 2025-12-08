@@ -14,7 +14,8 @@ namespace CleanArchitecture.WebApi.Middlewares
         public GeoLocationMiddleware(RequestDelegate next, IHttpClientFactory httpClientFactory)
         {
             _next = next;
-            _httpClient = httpClientFactory.CreateClient();
+            _httpClient = httpClientFactory.CreateClient("GeoClient");
+
         }
 
         public async Task InvokeAsync(HttpContext context)
