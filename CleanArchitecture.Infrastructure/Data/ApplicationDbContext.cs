@@ -34,9 +34,7 @@ namespace CleanArchitecture.Infrastructure.Data
 
         public DbSet<ContactSubmission> ContactSubmissions { get; set; }
 
-        public DbSet<AppointmentType> AppointmentTypes { get; set; }
-        public DbSet<AppointmentSlot> AppointmentSlots { get; set; }
-        public DbSet<Appointment> Appointments { get; set; }
+
 
    
         public DbSet<Notification> Notifications { get; set; }

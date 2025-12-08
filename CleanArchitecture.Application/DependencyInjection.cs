@@ -18,8 +18,7 @@ namespace CleanArchitecture.Application
             // Contact Form Services
             services.AddScoped<IContactSubmissionService, ContactSubmissionService>();
 
-            // Appointment Services
-            services.AddScoped<IAppointmentService, AppointmentService>();
+     
 
             // Validators
             services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);
