@@ -16,9 +16,10 @@ namespace CleanArchitecture.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             // Contact Form Services
-            services.AddScoped<IContactSubmissionService, ContactSubmissionService>();
+            //services.AddScoped<IContactSubmissionService, ContactSubmissionService>();
 
-     
+            // Register application services
+            services.AddScoped<IContactSubmissionService, ContactSubmissionService>();
 
             // Validators
             services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);

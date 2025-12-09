@@ -6,47 +6,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CleanArchitecture.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "AppointmentSlots",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    SlotDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    StartTime = table.Column<TimeSpan>(type: "time", nullable: true),
-                    EndTime = table.Column<TimeSpan>(type: "time", nullable: true),
-                    IsBooked = table.Column<bool>(type: "bit", nullable: true),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    AdditionalData = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AppointmentSlots", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "AppointmentTypes",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    AdditionalData = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AppointmentTypes", x => x.Id);
-                });
-
             migrationBuilder.CreateTable(
                 name: "AppSettings",
                 columns: table => new
@@ -137,6 +101,7 @@ namespace CleanArchitecture.Infrastructure.Migrations
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ErrorMessage = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SentAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    AttemptCount = table.Column<int>(type: "int", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -185,39 +150,6 @@ namespace CleanArchitecture.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Appointments",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    AppointmentTypeId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    SlotId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    IpAddress = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserAgent = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    AdditionalData = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Appointments", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Appointments_AppointmentSlots_SlotId",
-                        column: x => x.SlotId,
-                        principalTable: "AppointmentSlots",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_Appointments_AppointmentTypes_AppointmentTypeId",
-                        column: x => x.AppointmentTypeId,
-                        principalTable: "AppointmentTypes",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
                 name: "ContactSubmissions",
                 columns: table => new
                 {
@@ -227,13 +159,14 @@ namespace CleanArchitecture.Infrastructure.Migrations
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PhoneCountryCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CountryId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    CountryName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     State = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     City = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Subject = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Message = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IpAddress = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserAgent = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CountryId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -294,18 +227,6 @@ namespace CleanArchitecture.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Appointments_AppointmentTypeId",
-                table: "Appointments",
-                column: "AppointmentTypeId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Appointments_SlotId",
-                table: "Appointments",
-                column: "SlotId",
-                unique: true,
-                filter: "[SlotId] IS NOT NULL");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Cities_StateId",
                 table: "Cities",
                 column: "StateId");
@@ -324,9 +245,6 @@ namespace CleanArchitecture.Infrastructure.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Appointments");
-
             migrationBuilder.DropTable(
                 name: "AppSettings");
 
@@ -350,12 +268,6 @@ namespace CleanArchitecture.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "Webhooks");
-
-            migrationBuilder.DropTable(
-                name: "AppointmentSlots");
-
-            migrationBuilder.DropTable(
-                name: "AppointmentTypes");
 
             migrationBuilder.DropTable(
                 name: "States");

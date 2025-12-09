@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CleanArchitecture.Application.DTOs.Contact
+﻿namespace CleanArchitecture.Application.DTOs.Contact
 {
+    /// <summary>
+    /// DTO returned when retrieving contact submissions.
+    /// Contains all contact details plus metadata.
+    /// </summary>
     public record ContactSubmissionDto(
         Guid Id,
         string? FirstName,
@@ -13,12 +11,16 @@ namespace CleanArchitecture.Application.DTOs.Contact
         string? Email,
         string? Phone,
         string? PhoneCountryCode,
-        string? Country,
+        string? CountryName,
         string? State,
         string? City,
         string? Subject,
         string? Message,
         string? IpAddress,
-        DateTime CreatedAt
+        string? UserAgent,
+        DateTime CreatedAt,
+        double? Latitude,
+double? Longitude
+
     );
 }

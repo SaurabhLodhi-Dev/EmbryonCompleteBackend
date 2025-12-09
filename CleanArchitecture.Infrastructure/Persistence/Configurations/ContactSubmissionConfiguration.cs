@@ -29,10 +29,14 @@ namespace CleanArchitecture.Infrastructure.Persistence.Configurations
             builder.Property(x => x.Subject).HasMaxLength(255);
             builder.Property(x => x.Message).HasColumnType("NVARCHAR(MAX)");
 
-            builder.HasOne(x => x.Country)
-                   .WithMany()
-                   .HasForeignKey(x => x.CountryId)
-                   .OnDelete(DeleteBehavior.Restrict);
+            //builder.HasOne(x => x.Country)
+            //       .WithMany()
+            //       .HasForeignKey(x => x.ci)
+            //       .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Property(x => x.Latitude);
+            builder.Property(x => x.Longitude);
+
         }
     }
 

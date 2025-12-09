@@ -1,103 +1,20 @@
-﻿//using CleanArchitecture.Application.DTOs.Contact;
-//using CleanArchitecture.Application.Interfaces;
-//using CleanArchitecture.WebApi.Middlewares;
-//using Microsoft.AspNetCore.Mvc;
-
-//namespace CleanArchitecture.WebApi.Controllers
-//{
-//    [ApiController]
-//    [Route("api/[controller]")]
-//    public class ContactSubmissionsController : ControllerBase
-//    {
-//        private readonly IContactSubmissionService _service;
-
-
-//        public ContactSubmissionsController(
-//            IContactSubmissionService service)
-//        {
-//            _service = service;
-
-//        }
-
-//        // ----------------------------------------------------------------------
-//        // GET ALL
-//        // ----------------------------------------------------------------------
-//        [HttpGet]
-//        [ProducesResponseType(typeof(IEnumerable<ContactSubmissionDto>), StatusCodes.Status200OK)]
-//        public async Task<ActionResult<IEnumerable<ContactSubmissionDto>>> GetAll()
-//        {
-//            var list = await _service.GetAllAsync();
-//            return Ok(list);
-//        }
-
-//        // ----------------------------------------------------------------------
-//        // GET BY ID
-//        // ----------------------------------------------------------------------
-//        [HttpGet("{id:guid}")]
-//        [ProducesResponseType(typeof(ContactSubmissionDto), StatusCodes.Status200OK)]
-//        [ProducesResponseType(StatusCodes.Status404NotFound)]
-//        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-//        public async Task<ActionResult<ContactSubmissionDto>> GetById(Guid id)
-//        {
-//            if (id == Guid.Empty)
-//                return BadRequest("Invalid ID.");
-
-//            var result = await _service.GetByIdAsync(id);
-
-//            if (result == null)
-//                return NotFound($"Contact submission with ID {id} not found.");
-
-//            return Ok(result);
-//        }
-
-//        // ----------------------------------------------------------------------
-//        // CREATE
-//        // ----------------------------------------------------------------------
-//        [HttpPost]
-//        [ProducesResponseType(typeof(ContactSubmissionDto), StatusCodes.Status201Created)]
-//        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-//        public async Task<ActionResult<ContactSubmissionDto>> Create([FromBody] CreateContactSubmissionDto dto)
-//        {
-//            var geo = HttpContext.Items["GeoInfo"] as GeoInfo;
-
-//            dto = dto with
-//            {
-//                IpAddress = geo?.ip,
-//                City = string.IsNullOrWhiteSpace(dto.City) ? geo?.city : dto.City,
-//                State = string.IsNullOrWhiteSpace(dto.State) ? geo?.region : dto.State
-//            };
-
-//            var created = await _service.CreateAsync(dto);
-
-//            return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
-//        }
-
-//        // ======================================================================
-//        // NEW ENDPOINT #1: TEST EMAIL
-//        // ======================================================================
-//        /// <summary>
-//        /// Sends a test email to verify SMTP configuration.
-//        /// </summary>
-
-
-//        // ======================================================================
-//        // NEW ENDPOINT #2: RESEND CONFIRMATION EMAIL
-//        // ======================================================================
-//        /// <summary>
-//        /// Resends the confirmation email for a specific contact submission.
-//        /// </summary>
-
-//    }
-//}
-
-
-using CleanArchitecture.Application.DTOs.Contact;
+﻿using CleanArchitecture.Application.DTOs.Contact;
 using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.WebApi.Middlewares;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture.WebApi.Controllers
 {
+    /// <summary>
+    /// Manages Contact Form submissions including:
+    /// - Creating new submissions
+    /// - Fetching all submissions
+    /// - Fetching a submission by ID
+    /// 
+    /// This controller also integrates:
+    /// - GeoLocation middleware (auto-fills IP, city, state, country, latitude, longitude)
+    /// - Sanitization to prevent harmful input
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class ContactSubmissionsController : ControllerBase
@@ -105,6 +22,9 @@ namespace CleanArchitecture.WebApi.Controllers
         private readonly IContactSubmissionService _service;
         private readonly ILogger<ContactSubmissionsController> _logger;
 
+        /// <summary>
+        /// Constructor injecting service layer and logger.
+        /// </summary>
         public ContactSubmissionsController(
             IContactSubmissionService service,
             ILogger<ContactSubmissionsController> logger)
@@ -113,9 +33,14 @@ namespace CleanArchitecture.WebApi.Controllers
             _logger = logger;
         }
 
-        // ----------------------------------------------------------------------
+        // =====================================================================================
         // GET ALL
-        // ----------------------------------------------------------------------
+        // =====================================================================================
+
+        /// <summary>
+        /// Retrieves all contact submissions stored in the system.
+        /// </summary>
+        /// <returns>List of contact submission DTOs.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<ContactSubmissionDto>), StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<ContactSubmissionDto>>> GetAll()
@@ -124,9 +49,15 @@ namespace CleanArchitecture.WebApi.Controllers
             return Ok(list);
         }
 
-        // ----------------------------------------------------------------------
+        // =====================================================================================
         // GET BY ID
-        // ----------------------------------------------------------------------
+        // =====================================================================================
+
+        /// <summary>
+        /// Fetch a specific contact submission by its unique ID.
+        /// </summary>
+        /// <param name="id">Submission ID (Guid)</param>
+        /// <returns>ContactSubmissionDto if found</returns>
         [HttpGet("{id:guid}")]
         [ProducesResponseType(typeof(ContactSubmissionDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -144,21 +75,37 @@ namespace CleanArchitecture.WebApi.Controllers
             return Ok(result);
         }
 
-        // ----------------------------------------------------------------------
-        // CREATE
-        // ----------------------------------------------------------------------
+        // =====================================================================================
+        // CREATE (POST)
+        // =====================================================================================
+
+        /// <summary>
+        /// Creates a new contact form submission.
+        /// GeoLocation middlewares automatically provide:
+        /// - IP Address
+        /// - User Agent
+        /// - City, State, Country
+        /// - Latitude, Longitude
+        /// 
+        /// Sanitization is applied to protect against unsafe input.
+        /// </summary>
+        /// <param name="dto">Incoming request payload from UI</param>
+        /// <returns>Created submission DTO</returns>
         [HttpPost]
         [ProducesResponseType(typeof(ContactSubmissionDto), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<ContactSubmissionDto>> Create([FromBody] CreateContactSubmissionDto dto)
         {
-            // ✅ Get GeoInfo from middleware
+            // Retrieve geolocation information from the middleware
             var geo = HttpContext.Items["GeoInfo"] as GeoInfo;
 
-            // Optional: log GeoInfo for debugging
-            _logger.LogInformation("GeoInfo: {@Geo}", geo);
+            // Logging geolocation data for debugging and monitoring
+            _logger.LogInformation(
+                "GeoInfo Received → IP: {IP}, City: {City}, Region: {Region}, Country: {Country}, Latitude: {Lat}, Longitude: {Lon}",
+                geo?.ip, geo?.city, geo?.region, geo?.country_name, geo?.latitude, geo?.longitude
+            );
 
-            // ✅ Sanitize and fill missing values
+            // Sanitize incoming request + auto-fill missing geolocation properties
             var sanitizedDto = dto with
             {
                 FirstName = Sanitizer.Clean(dto.FirstName),
@@ -166,39 +113,62 @@ namespace CleanArchitecture.WebApi.Controllers
                 Email = dto.Email?.Trim(),
                 Phone = dto.Phone?.Trim(),
                 PhoneCountryCode = dto.PhoneCountryCode?.Trim(),
-                CountryId = dto.CountryId,
-                State = string.IsNullOrWhiteSpace(dto.State) ? Sanitizer.Clean(geo?.region) : Sanitizer.Clean(dto.State),
-                City = string.IsNullOrWhiteSpace(dto.City) ? Sanitizer.Clean(geo?.city) : Sanitizer.Clean(dto.City),
+
+                // Auto-fill country name if user didn't provide one
+                CountryName = string.IsNullOrWhiteSpace(dto.CountryName)
+                    ? Sanitizer.Clean(geo?.country_name)
+                    : Sanitizer.Clean(dto.CountryName),
+
+                // Auto-fill state from GeoIP
+                State = string.IsNullOrWhiteSpace(dto.State)
+                    ? Sanitizer.Clean(geo?.region)
+                    : Sanitizer.Clean(dto.State),
+
+                // Auto-fill city from GeoIP
+                City = string.IsNullOrWhiteSpace(dto.City)
+                    ? Sanitizer.Clean(geo?.city)
+                    : Sanitizer.Clean(dto.City),
+
+                // Sanitize remaining fields
                 Subject = Sanitizer.Clean(dto.Subject),
                 Message = Sanitizer.Clean(dto.Message),
-                IpAddress = geo?.ip
+
+                // Assign tracking fields (IP + UA)
+                IpAddress = geo?.ip,
+                UserAgent = geo?.user_agent,
+
+                // Assign latitude and longitude
+                Latitude = geo?.latitude,
+                Longitude = geo?.longitude
             };
 
+            // Create and save record via service layer
             var created = await _service.CreateAsync(sanitizedDto);
 
             return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
-        // ======================================================================
-        // NEW ENDPOINT #1: TEST EMAIL
-        // ======================================================================
+        // =====================================================================================
+        // TEST EMAIL ENDPOINT (Optional)
+        // =====================================================================================
+
         /// <summary>
-        /// Sends a test email to verify SMTP configuration.
+        /// Sends a test email to verify SMTP email delivery configuration.
         /// </summary>
         [HttpPost("test-email")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult SendTestEmail()
         {
-            // TODO: implement sending a test email using your email service
+            // You can implement actual email sending here
             return Ok(new { success = true, message = "Test email sent (stub)." });
         }
 
-        // ======================================================================
-        // NEW ENDPOINT #2: RESEND CONFIRMATION EMAIL
-        // ======================================================================
+        // =====================================================================================
+        // RESEND CONFIRMATION EMAIL (Optional)
+        // =====================================================================================
+
         /// <summary>
-        /// Resends the confirmation email for a specific contact submission.
+        /// Resends a confirmation email for a previously created contact submission.
         /// </summary>
         [HttpPost("{id:guid}/resend-email")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -210,25 +180,33 @@ namespace CleanArchitecture.WebApi.Controllers
                 return BadRequest("Invalid ID.");
 
             var submission = await _service.GetByIdAsync(id);
+
             if (submission == null)
-                return NotFound($"Contact submission with ID {id} not found.");
+                return NotFound($"Submission with ID {id} not found.");
 
-            // TODO: implement resending confirmation email using your email service
-
+            // Implement actual resend logic here
             return Ok(new { success = true, message = "Confirmation email resent (stub)." });
         }
     }
 
-    // -------------------------------------------------------------------------
-    // Simple Sanitizer Helper
-    // -------------------------------------------------------------------------
+    // =============================================================================================
+    // Sanitizer Helper
+    // =============================================================================================
+
+    /// <summary>
+    /// Sanitizes incoming string fields by trimming whitespace
+    /// and removing unsafe control characters.
+    /// </summary>
     public static class Sanitizer
     {
         public static string? Clean(string? input)
         {
-            if (string.IsNullOrWhiteSpace(input)) return input;
+            if (string.IsNullOrWhiteSpace(input))
+                return input;
+
             var trimmed = input.Trim();
-            // Remove control characters
+
+            // Remove ASCII control characters (security protection)
             return new string(trimmed.Where(c => !char.IsControl(c)).ToArray());
         }
     }

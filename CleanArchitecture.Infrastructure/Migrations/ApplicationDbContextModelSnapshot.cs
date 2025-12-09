@@ -54,123 +54,6 @@ namespace CleanArchitecture.Infrastructure.Migrations
                     b.ToTable("AppSettings");
                 });
 
-            modelBuilder.Entity("CleanArchitecture.Domain.Entities.Appointment", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("AdditionalData")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("AppointmentTypeId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("IpAddress")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("SlotId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UserAgent")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AppointmentTypeId");
-
-                    b.HasIndex("SlotId")
-                        .IsUnique()
-                        .HasFilter("[SlotId] IS NOT NULL");
-
-                    b.ToTable("Appointments");
-                });
-
-            modelBuilder.Entity("CleanArchitecture.Domain.Entities.AppointmentSlot", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("AdditionalData")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<TimeSpan?>("EndTime")
-                        .HasColumnType("time");
-
-                    b.Property<bool?>("IsBooked")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("SlotDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<TimeSpan?>("StartTime")
-                        .HasColumnType("time");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("AppointmentSlots");
-                });
-
-            modelBuilder.Entity("CleanArchitecture.Domain.Entities.AppointmentType", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("AdditionalData")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("AppointmentTypes");
-                });
-
             modelBuilder.Entity("CleanArchitecture.Domain.Entities.AuditLog", b =>
                 {
                     b.Property<Guid>("Id")
@@ -258,6 +141,9 @@ namespace CleanArchitecture.Infrastructure.Migrations
                     b.Property<Guid?>("CountryId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("CountryName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -275,6 +161,12 @@ namespace CleanArchitecture.Infrastructure.Migrations
 
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("Latitude")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("Longitude")
+                        .HasColumnType("float");
 
                     b.Property<string>("Message")
                         .HasColumnType("nvarchar(max)");
@@ -522,21 +414,6 @@ namespace CleanArchitecture.Infrastructure.Migrations
                     b.ToTable("Webhooks");
                 });
 
-            modelBuilder.Entity("CleanArchitecture.Domain.Entities.Appointment", b =>
-                {
-                    b.HasOne("CleanArchitecture.Domain.Entities.AppointmentType", "AppointmentType")
-                        .WithMany("Appointments")
-                        .HasForeignKey("AppointmentTypeId");
-
-                    b.HasOne("CleanArchitecture.Domain.Entities.AppointmentSlot", "Slot")
-                        .WithOne("Appointment")
-                        .HasForeignKey("CleanArchitecture.Domain.Entities.Appointment", "SlotId");
-
-                    b.Navigation("AppointmentType");
-
-                    b.Navigation("Slot");
-                });
-
             modelBuilder.Entity("CleanArchitecture.Domain.Entities.City", b =>
                 {
                     b.HasOne("CleanArchitecture.Domain.Entities.State", "State")
@@ -562,16 +439,6 @@ namespace CleanArchitecture.Infrastructure.Migrations
                         .HasForeignKey("CountryId");
 
                     b.Navigation("Country");
-                });
-
-            modelBuilder.Entity("CleanArchitecture.Domain.Entities.AppointmentSlot", b =>
-                {
-                    b.Navigation("Appointment");
-                });
-
-            modelBuilder.Entity("CleanArchitecture.Domain.Entities.AppointmentType", b =>
-                {
-                    b.Navigation("Appointments");
                 });
 
             modelBuilder.Entity("CleanArchitecture.Domain.Entities.Country", b =>

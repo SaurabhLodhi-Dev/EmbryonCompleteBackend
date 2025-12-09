@@ -17,7 +17,8 @@ namespace CleanArchitecture.Domain.Entities
         public string? Email { get; set; }
         public string? Phone { get; set; }
         public string? PhoneCountryCode { get; set; }
-        public Guid? CountryId { get; set; }
+        // CHANGED
+        public string? CountryName { get; set; }
         public string? State { get; set; }   // free-text (client asked)
         public string? City { get; set; }    // free-text
         public string? Subject { get; set; }
@@ -28,6 +29,9 @@ namespace CleanArchitecture.Domain.Entities
 
         // Navigation
         public Country? Country { get; set; }
+
+        public double? Latitude { get; set; }
+        public double? Longitude { get; set; }
     }
 
 }
