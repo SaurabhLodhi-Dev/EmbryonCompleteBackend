@@ -6293,3 +6293,385 @@ SET NOCOUNT ON;
 INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
 VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
 2025-12-09T18:01:43.7450519+05:30 0HNHN3E1NNM95:00000003 [INF] Request finished "HTTP/1.1" "GET" "https"://"undeluding-antrorsely-coleman.ngrok-free.dev""""/api/ContactSubmissions""" - 200 null "application/json" 112.6002ms (74253ad3)
+2025-12-09T18:40:46.0348995+05:30  [INF] 🚀 Embryon API started in "Development" (49d10e09)
+2025-12-09T18:40:46.0387184+05:30  [INF] 🌍 Real GeoLocation Enabled (fbadb743)
+2025-12-09T18:40:46.0503185+05:30  [INF] Email background service started. (8e0d769c)
+2025-12-09T18:40:46.1831505+05:30  [INF] Now listening on: "https://localhost:7281" (d826f4b8)
+2025-12-09T18:40:46.1831837+05:30  [INF] Now listening on: "http://localhost:5117" (d826f4b8)
+2025-12-09T18:40:46.2200351+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-12-09T18:40:46.2200878+05:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-12-09T18:40:46.2201039+05:30  [INF] Content root path: "D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi" (cc26f24e)
+2025-12-09T18:40:46.7390119+05:30 0HNHN4HETA1L3:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - null null (d509f86a)
+2025-12-09T18:40:46.8695751+05:30 0HNHN4HETA1L3:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.html\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":51,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:40:46.8779192+05:30 0HNHN4HETA1L3:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - null null (d509f86a)
+2025-12-09T18:40:46.8779191+05:30 0HNHN4HETA1L3:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-09T18:40:46.8849572+05:30 0HNHN4HETA1L3:00000005 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.js\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":5,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:40:46.8908741+05:30 0HNHN4HETA1L3:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-09T18:40:46.9024853+05:30 0HNHN4HETA1L3:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - 200 16533 "application/javascript; charset=utf-8" 23.9997ms (74253ad3)
+2025-12-09T18:40:46.9206868+05:30 0HNHN4HETA1L3:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 30.4647ms (74253ad3)
+2025-12-09T18:40:48.3987995+05:30 0HNHN4HETA1L3:00000005 [INF] Executed DbCommand ("73"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:40:48.3988127+05:30 0HNHN4HETA1L3:00000001 [INF] Executed DbCommand ("73"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:40:48.4186843+05:30 0HNHN4HETA1L3:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 1540.9063ms (74253ad3)
+2025-12-09T18:40:48.4197025+05:30 0HNHN4HETA1L3:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1685.3043ms (74253ad3)
+2025-12-09T18:40:48.4543205+05:30 0HNHN4HETA1L3:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-12-09T18:40:48.4735477+05:30 0HNHN4HETA1L3:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/v1/swagger.json\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":18,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:40:48.5242491+05:30 0HNHN4HETA1L3:00000009 [INF] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:40:48.5247051+05:30 0HNHN4HETA1L3:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 70.7717ms (74253ad3)
+2025-12-09T18:43:49.9539492+05:30  [INF] 🚀 Embryon API started in "Development" (49d10e09)
+2025-12-09T18:43:49.9582083+05:30  [INF] 🌍 Real GeoLocation Enabled (fbadb743)
+2025-12-09T18:43:49.9706841+05:30  [INF] Email background service started. (8e0d769c)
+2025-12-09T18:43:50.1144185+05:30  [INF] Now listening on: "https://localhost:7281" (d826f4b8)
+2025-12-09T18:43:50.1144547+05:30  [INF] Now listening on: "http://localhost:5117" (d826f4b8)
+2025-12-09T18:43:50.1589897+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-12-09T18:43:50.1590513+05:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-12-09T18:43:50.1590760+05:30  [INF] Content root path: "D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi" (cc26f24e)
+2025-12-09T18:43:50.5928997+05:30 0HNHN4J5M7N16:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - null null (d509f86a)
+2025-12-09T18:43:50.7214537+05:30 0HNHN4J5M7N16:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.html\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":51,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:43:50.7294016+05:30 0HNHN4J5M7N16:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - null null (d509f86a)
+2025-12-09T18:43:50.7294016+05:30 0HNHN4J5M7N16:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-09T18:43:50.7319061+05:30 0HNHN4J5M7N16:00000005 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.js\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":0,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:43:50.7406505+05:30 0HNHN4J5M7N16:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-09T18:43:50.7528872+05:30 0HNHN4J5M7N16:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - 200 16533 "application/javascript; charset=utf-8" 20.4814ms (74253ad3)
+2025-12-09T18:43:50.7819924+05:30 0HNHN4J5M7N16:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 41.5505ms (74253ad3)
+2025-12-09T18:43:51.6579914+05:30 0HNHN4J5M7N16:00000001 [INF] Executed DbCommand ("36"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:43:51.6579912+05:30 0HNHN4J5M7N16:00000005 [INF] Executed DbCommand ("36"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:43:51.6782040+05:30 0HNHN4J5M7N16:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 949.0334ms (74253ad3)
+2025-12-09T18:43:51.6792402+05:30 0HNHN4J5M7N16:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1090.9262ms (74253ad3)
+2025-12-09T18:43:51.7146794+05:30 0HNHN4J5M7N16:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-12-09T18:43:51.7230662+05:30 0HNHN4J5M7N16:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/favicon-32x32.png""" - null null (d509f86a)
+2025-12-09T18:43:51.7292257+05:30 0HNHN4J5M7N16:0000000B [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2025-12-09T18:43:51.7293320+05:30 0HNHN4J5M7N16:0000000B [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/favicon-32x32.png\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":6,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:43:51.7318252+05:30 0HNHN4J5M7N16:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/v1/swagger.json\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":16,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:43:51.7885882+05:30 0HNHN4J5M7N16:00000009 [INF] Executed DbCommand ("14"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:43:51.7885855+05:30 0HNHN4J5M7N16:0000000B [INF] Executed DbCommand ("14"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:43:51.7891068+05:30 0HNHN4J5M7N16:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 74.598ms (74253ad3)
+2025-12-09T18:43:51.7891436+05:30 0HNHN4J5M7N16:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 66.2445ms (74253ad3)
+2025-12-09T18:44:14.9574418+05:30 0HNHN4J5M7N16:0000000D [INF] Request starting "HTTP/2" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - "application/json" 397 (d509f86a)
+2025-12-09T18:44:14.9607488+05:30 0HNHN4J5M7N16:0000000D [INF] 📡 Client IP detected: "127.0.0.1" (f8a23c3e)
+2025-12-09T18:44:14.9611299+05:30 0HNHN4J5M7N16:0000000D [WRN] Local/private IP detected. Skipping geo lookup. IP: "127.0.0.1" (25082269)
+2025-12-09T18:44:14.9636322+05:30 0HNHN4J5M7N16:0000000D [INF] CORS policy execution failed. (09b6f179)
+2025-12-09T18:44:14.9638653+05:30 0HNHN4J5M7N16:0000000D [INF] Request origin "https://localhost:7281" does not have permission to access the resource. (a03d560b)
+2025-12-09T18:44:14.9681644+05:30 0HNHN4J5M7N16:0000000D [INF] Executing endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (500cc934)
+2025-12-09T18:44:14.9824087+05:30 0HNHN4J5M7N16:0000000D [INF] Route matched with "{action = \"Create\", controller = \"ContactSubmissions\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto]] Create(CleanArchitecture.Application.DTOs.Contact.CreateContactSubmissionDto)" on controller "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController" ("CleanArchitecture.WebApi"). (122b2fdf)
+2025-12-09T18:44:15.0489030+05:30 0HNHN4J5M7N16:0000000D [INF] GeoInfo Received → IP: "127.0.0.1", City: "Local", Region: "Development", Country: "Local Development", Latitude: null, Longitude: null (8f114958)
+2025-12-09T18:44:15.0603264+05:30 0HNHN4J5M7N16:0000000D [INF] Start processing HTTP request "POST" "https://challenges.cloudflare.com/turnstile/v0/siteverify" (338f1c77)
+2025-12-09T18:44:15.0609223+05:30 0HNHN4J5M7N16:0000000D [INF] Sending HTTP request "POST" "https://challenges.cloudflare.com/turnstile/v0/siteverify" (2e7ac211)
+2025-12-09T18:44:15.1084409+05:30 0HNHN4J5M7N16:0000000D [INF] Received HTTP response headers after 42.6146ms - 200 (f0742c1f)
+2025-12-09T18:44:15.1088735+05:30 0HNHN4J5M7N16:0000000D [INF] End processing HTTP request after 51.0462ms - 200 (7656b38e)
+2025-12-09T18:44:15.1119498+05:30 0HNHN4J5M7N16:0000000D [INF] CAPTCHA validated successfully for IP "127.0.0.1" (356f371a)
+2025-12-09T18:44:15.1723052+05:30 0HNHN4J5M7N16:0000000D [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Guid), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Double), @p12='?' (DbType = Double), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (DbType = DateTime2), @p19='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ContactSubmissions] ([Id], [AdditionalData], [City], [CountryId], [CountryName], [CreatedAt], [DeletedAt], [Email], [FirstName], [IpAddress], [LastName], [Latitude], [Longitude], [Message], [Phone], [PhoneCountryCode], [State], [Subject], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);" (0723d8ff)
+2025-12-09T18:44:15.1732648+05:30 0HNHN4J5M7N16:0000000D [INF] Contact submission stored: ID=7c34378a-92d1-49cd-8ecd-2ad0fdb7ea73, Email="mark.visser@example.com", IP="127.0.0.1", Lat=null, Lon=null (f25712b1)
+2025-12-09T18:44:15.1755277+05:30 0HNHN4J5M7N16:0000000D [INF] User confirmation email queued → "mark.visser@example.com" (4016d990)
+2025-12-09T18:44:15.1766721+05:30 0HNHN4J5M7N16:0000000D [INF] Admin notification email queued → "admin@embryon.test" (de71a616)
+2025-12-09T18:44:15.1814289+05:30 0HNHN4J5M7N16:0000000D [INF] Executing "CreatedAtActionResult", writing value of type '"CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto"'. (605b4265)
+2025-12-09T18:44:15.2040634+05:30 0HNHN4J5M7N16:0000000D [INF] Executed action "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)" in 219.1462ms (afa2e885)
+2025-12-09T18:44:15.2043972+05:30 0HNHN4J5M7N16:0000000D [INF] Executed endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (99874f2b)
+2025-12-09T18:44:15.2073466+05:30  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notifications] ([Id], [AdditionalData], [AttemptCount], [CreatedAt], [DeletedAt], [ErrorMessage], [Message], [SentAt], [Status], [Subject], [ToAddress], [Type], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);" (0723d8ff)
+2025-12-09T18:44:15.2157275+05:30 0HNHN4J5M7N16:0000000D [INF] HTTP Request Log: "{\"method\":\"POST\",\"path\":\"/api/ContactSubmissions\",\"query\":\"\",\"statusCode\":201,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":255,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:44:15.2211154+05:30 0HNHN4J5M7N16:0000000D [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:44:15.2275193+05:30 0HNHN4J5M7N16:0000000D [INF] Request finished "HTTP/2" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - 201 null "application/json" 270.1522ms (74253ad3)
+2025-12-09T18:44:18.8983817+05:30  [ERR] Failed to send email to "mark.visser@example.com" (d6429622)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-09T18:44:18.9604955+05:30  [WRN] Failed to send email to "mark.visser@example.com" attempt 1. Backoff 5s (82f39255)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-09T18:44:18.9706405+05:30  [INF] Executed DbCommand ("5"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-09T18:44:27.4754739+05:30  [ERR] Failed to send email to "mark.visser@example.com" (d6429622)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-09T18:44:27.5273043+05:30  [WRN] Failed to send email to "mark.visser@example.com" attempt 2. Backoff 10s (82f39255)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-09T18:44:27.5288468+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-09T18:44:41.0156538+05:30  [ERR] Failed to send email to "mark.visser@example.com" (d6429622)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-09T18:44:41.0634988+05:30  [WRN] Failed to send email to "mark.visser@example.com" attempt 3. Backoff 20s (82f39255)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-09T18:44:41.0648664+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-09T18:45:01.0723354+05:30  [INF] Executed DbCommand ("3"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-09T18:45:01.0731457+05:30  [ERR] Failed to deliver email to "mark.visser@example.com" after 3 attempts (a58b0ecd)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-09T18:45:01.0760244+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notifications] ([Id], [AdditionalData], [AttemptCount], [CreatedAt], [DeletedAt], [ErrorMessage], [Message], [SentAt], [Status], [Subject], [ToAddress], [Type], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);" (0723d8ff)
+2025-12-09T18:45:04.4661569+05:30  [ERR] Failed to send email to "admin@embryon.test" (d6429622)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-09T18:45:04.5162146+05:30  [WRN] Failed to send email to "admin@embryon.test" attempt 1. Backoff 5s (82f39255)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-09T18:45:04.5175784+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-09T18:45:13.0823088+05:30  [ERR] Failed to send email to "admin@embryon.test" (d6429622)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-09T18:45:13.1323200+05:30  [WRN] Failed to send email to "admin@embryon.test" attempt 2. Backoff 10s (82f39255)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-09T18:45:13.1337575+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-09T18:45:26.5157845+05:30  [ERR] Failed to send email to "admin@embryon.test" (d6429622)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-09T18:45:26.5654354+05:30  [WRN] Failed to send email to "admin@embryon.test" attempt 3. Backoff 20s (82f39255)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-09T18:45:26.5667310+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-09T18:45:46.5831892+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-09T18:45:46.5838157+05:30  [ERR] Failed to deliver email to "admin@embryon.test" after 3 attempts (a58b0ecd)
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-09T18:55:21.0520357+05:30  [INF] 🚀 Embryon API started in "Development" (49d10e09)
+2025-12-09T18:55:21.0560316+05:30  [INF] 🌍 Real GeoLocation Enabled (fbadb743)
+2025-12-09T18:55:21.0662026+05:30  [INF] Email background service started. (8e0d769c)
+2025-12-09T18:55:21.2109405+05:30  [INF] Now listening on: "https://localhost:7281" (d826f4b8)
+2025-12-09T18:55:21.2109776+05:30  [INF] Now listening on: "http://localhost:5117" (d826f4b8)
+2025-12-09T18:55:21.2549109+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-12-09T18:55:21.2549746+05:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-12-09T18:55:21.2549897+05:30  [INF] Content root path: "D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi" (cc26f24e)
+2025-12-09T18:55:21.7883135+05:30 0HNHN4PJMACDV:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - null null (d509f86a)
+2025-12-09T18:55:21.9190968+05:30 0HNHN4PJMACDV:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.html\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":52,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:55:21.9283796+05:30 0HNHN4PJMACDV:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - null null (d509f86a)
+2025-12-09T18:55:21.9283795+05:30 0HNHN4PJMACDV:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-09T18:55:21.9374154+05:30 0HNHN4PJMACDV:00000005 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.js\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":5,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:55:21.9447737+05:30 0HNHN4PJMACDV:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-09T18:55:21.9581935+05:30 0HNHN4PJMACDV:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - 200 16533 "application/javascript; charset=utf-8" 29.0501ms (74253ad3)
+2025-12-09T18:55:21.9865645+05:30 0HNHN4PJMACDV:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 41.7172ms (74253ad3)
+2025-12-09T18:55:22.9163582+05:30 0HNHN4PJMACDV:00000005 [INF] Executed DbCommand ("38"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:55:22.9163558+05:30 0HNHN4PJMACDV:00000001 [INF] Executed DbCommand ("38"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:55:22.9388356+05:30 0HNHN4PJMACDV:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 1010.5833ms (74253ad3)
+2025-12-09T18:55:22.9399229+05:30 0HNHN4PJMACDV:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1156.4294ms (74253ad3)
+2025-12-09T18:55:22.9740299+05:30 0HNHN4PJMACDV:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-12-09T18:55:22.9953986+05:30 0HNHN4PJMACDV:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/v1/swagger.json\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\",\"durationMs\":20,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:55:23.0434907+05:30 0HNHN4PJMACDV:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:55:23.0439068+05:30 0HNHN4PJMACDV:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 70.0301ms (74253ad3)
+2025-12-09T18:55:26.8226986+05:30 0HNHN4PJMACE0:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/contact""" - "application/json" 229 (d509f86a)
+2025-12-09T18:55:26.8247454+05:30 0HNHN4PJMACE0:00000001 [INF] 📡 Client IP detected: "127.0.0.1" (f8a23c3e)
+2025-12-09T18:55:26.8250168+05:30 0HNHN4PJMACE0:00000001 [WRN] Local/private IP detected. Skipping geo lookup. IP: "127.0.0.1" (25082269)
+2025-12-09T18:55:26.8270351+05:30 0HNHN4PJMACE0:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2025-12-09T18:55:26.8292760+05:30 0HNHN4PJMACE0:00000001 [INF] HTTP Request Log: "{\"method\":\"POST\",\"path\":\"/api/contact\",\"query\":\"\",\"statusCode\":404,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0\",\"durationMs\":6,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:55:26.8325970+05:30 0HNHN4PJMACE0:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:55:26.8382704+05:30 0HNHN4PJMACE0:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/contact""" - 404 0 null 15.6816ms (74253ad3)
+2025-12-09T18:55:26.8396421+05:30 0HNHN4PJMACE0:00000001 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "POST" "https"://"localhost:7281""""/api/contact", Response status code: 404 (e353595a)
+2025-12-09T18:55:28.7004592+05:30 0HNHN4PJMACE1:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/contact""" - "application/json" 229 (d509f86a)
+2025-12-09T18:55:28.7011558+05:30 0HNHN4PJMACE1:00000001 [INF] 📡 Client IP detected: "127.0.0.1" (f8a23c3e)
+2025-12-09T18:55:28.7011861+05:30 0HNHN4PJMACE1:00000001 [WRN] Local/private IP detected. Skipping geo lookup. IP: "127.0.0.1" (25082269)
+2025-12-09T18:55:28.7015056+05:30 0HNHN4PJMACE1:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2025-12-09T18:55:28.7016639+05:30 0HNHN4PJMACE1:00000001 [INF] HTTP Request Log: "{\"method\":\"POST\",\"path\":\"/api/contact\",\"query\":\"\",\"statusCode\":404,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0\",\"durationMs\":0,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:55:28.7042562+05:30 0HNHN4PJMACE1:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:55:28.7046962+05:30 0HNHN4PJMACE1:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/contact""" - 404 0 null 4.2872ms (74253ad3)
+2025-12-09T18:55:28.7047567+05:30 0HNHN4PJMACE1:00000001 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "POST" "https"://"localhost:7281""""/api/contact", Response status code: 404 (e353595a)
+2025-12-09T18:57:23.7130120+05:30 0HNHN4PJMACE2:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - "application/json" 234 (d509f86a)
+2025-12-09T18:57:23.7140852+05:30 0HNHN4PJMACE2:00000001 [INF] 📡 Client IP detected: "127.0.0.1" (f8a23c3e)
+2025-12-09T18:57:23.7141146+05:30 0HNHN4PJMACE2:00000001 [WRN] Local/private IP detected. Skipping geo lookup. IP: "127.0.0.1" (25082269)
+2025-12-09T18:57:23.7145631+05:30 0HNHN4PJMACE2:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2025-12-09T18:57:23.7154491+05:30 0HNHN4PJMACE2:00000001 [INF] Executing endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (500cc934)
+2025-12-09T18:57:23.7313503+05:30 0HNHN4PJMACE2:00000001 [INF] Route matched with "{action = \"Create\", controller = \"ContactSubmissions\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto]] Create(CleanArchitecture.Application.DTOs.Contact.CreateContactSubmissionDto)" on controller "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController" ("CleanArchitecture.WebApi"). (122b2fdf)
+2025-12-09T18:57:23.7988778+05:30 0HNHN4PJMACE2:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2025-12-09T18:57:23.8121061+05:30 0HNHN4PJMACE2:00000001 [INF] Executed action "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)" in 78.103ms (afa2e885)
+2025-12-09T18:57:23.8121582+05:30 0HNHN4PJMACE2:00000001 [INF] Executed endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (99874f2b)
+2025-12-09T18:57:23.8124210+05:30 0HNHN4PJMACE2:00000001 [INF] HTTP Request Log: "{\"method\":\"POST\",\"path\":\"/api/ContactSubmissions\",\"query\":\"\",\"statusCode\":400,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0\",\"durationMs\":98,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:57:23.8161024+05:30 0HNHN4PJMACE2:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:57:23.8174829+05:30 0HNHN4PJMACE2:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - 400 null "application/problem+json; charset=utf-8" 104.522ms (74253ad3)
+2025-12-09T18:58:25.4959094+05:30 0HNHN4PJMACE3:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - "application/json" 224 (d509f86a)
+2025-12-09T18:58:25.4961538+05:30 0HNHN4PJMACE3:00000001 [INF] 📡 Client IP detected: "127.0.0.1" (f8a23c3e)
+2025-12-09T18:58:25.4961780+05:30 0HNHN4PJMACE3:00000001 [WRN] Local/private IP detected. Skipping geo lookup. IP: "127.0.0.1" (25082269)
+2025-12-09T18:58:25.4962212+05:30 0HNHN4PJMACE3:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2025-12-09T18:58:25.4962787+05:30 0HNHN4PJMACE3:00000001 [INF] Executing endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (500cc934)
+2025-12-09T18:58:25.4965253+05:30 0HNHN4PJMACE3:00000001 [INF] Route matched with "{action = \"Create\", controller = \"ContactSubmissions\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto]] Create(CleanArchitecture.Application.DTOs.Contact.CreateContactSubmissionDto)" on controller "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController" ("CleanArchitecture.WebApi"). (122b2fdf)
+2025-12-09T18:58:25.5015599+05:30 0HNHN4PJMACE3:00000001 [INF] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'. (605b4265)
+2025-12-09T18:58:25.5027833+05:30 0HNHN4PJMACE3:00000001 [INF] Executed action "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)" in 6.2051ms (afa2e885)
+2025-12-09T18:58:25.5028081+05:30 0HNHN4PJMACE3:00000001 [INF] Executed endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (99874f2b)
+2025-12-09T18:58:25.5029741+05:30 0HNHN4PJMACE3:00000001 [INF] HTTP Request Log: "{\"method\":\"POST\",\"path\":\"/api/ContactSubmissions\",\"query\":\"\",\"statusCode\":400,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0\",\"durationMs\":6,\"requestBody\":null}" (663ceef5)
+2025-12-09T18:58:25.5092133+05:30 0HNHN4PJMACE3:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-09T18:58:25.5095982+05:30 0HNHN4PJMACE3:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - 400 null "application/problem+json; charset=utf-8" 13.7284ms (74253ad3)

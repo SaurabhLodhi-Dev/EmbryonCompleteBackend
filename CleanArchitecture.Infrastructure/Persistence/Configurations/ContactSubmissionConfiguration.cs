@@ -23,21 +23,17 @@ namespace CleanArchitecture.Infrastructure.Persistence.Configurations
             builder.Property(x => x.Phone).HasMaxLength(50);
             builder.Property(x => x.PhoneCountryCode).HasMaxLength(10);
 
+            builder.Property(x => x.CountryName).HasMaxLength(150);
             builder.Property(x => x.State).HasMaxLength(150);
             builder.Property(x => x.City).HasMaxLength(150);
 
             builder.Property(x => x.Subject).HasMaxLength(255);
             builder.Property(x => x.Message).HasColumnType("NVARCHAR(MAX)");
 
-            //builder.HasOne(x => x.Country)
-            //       .WithMany()
-            //       .HasForeignKey(x => x.ci)
-            //       .OnDelete(DeleteBehavior.Restrict);
-
             builder.Property(x => x.Latitude);
             builder.Property(x => x.Longitude);
-
         }
+
     }
 
 }

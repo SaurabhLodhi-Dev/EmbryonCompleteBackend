@@ -254,7 +254,7 @@ namespace CleanArchitecture.WebApi.Middlewares
                 statusCode,
                 ip,
                 userAgent,
-                durationMs = stopwatch.ElapsedMilliseconds,
+                durationMs = _env.IsDevelopment() ? stopwatch.ElapsedMilliseconds : 0,
                 requestBody = shouldLogBody ? TryParseJson(bodyContent ?? "") : null
             };
 
