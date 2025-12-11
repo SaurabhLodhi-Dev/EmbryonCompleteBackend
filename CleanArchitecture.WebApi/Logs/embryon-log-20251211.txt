@@ -1,0 +1,213 @@
+2025-12-11T11:41:52.2438015+05:30  [INF] 🚀 Embryon API started in "Development" (49d10e09)
+2025-12-11T11:41:52.2476615+05:30  [INF] 🌍 Real GeoLocation Enabled (fbadb743)
+2025-12-11T11:41:52.2598170+05:30  [INF] Email background service started. (8e0d769c)
+2025-12-11T11:41:52.5128183+05:30  [INF] Now listening on: "https://localhost:7281" (d826f4b8)
+2025-12-11T11:41:52.5128931+05:30  [INF] Now listening on: "http://localhost:5117" (d826f4b8)
+2025-12-11T11:41:52.5561183+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-12-11T11:41:52.5561852+05:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-12-11T11:41:52.5562077+05:30  [INF] Content root path: "D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi" (cc26f24e)
+2025-12-11T11:41:52.9248970+05:30 0HNHOFGMQQAFV:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - null null (d509f86a)
+2025-12-11T11:41:53.1193585+05:30 0HNHOFGMQQAFV:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.html\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\",\"durationMs\":66,\"requestBody\":null}" (663ceef5)
+2025-12-11T11:41:53.1311303+05:30 0HNHOFGMQQAFV:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-11T11:41:53.1311317+05:30 0HNHOFGMQQAFV:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - null null (d509f86a)
+2025-12-11T11:41:53.1336676+05:30 0HNHOFGMQQAFV:00000003 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.js\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\",\"durationMs\":0,\"requestBody\":null}" (663ceef5)
+2025-12-11T11:41:53.1400314+05:30 0HNHOFGMQQAFV:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-11T11:41:53.1636258+05:30 0HNHOFGMQQAFV:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - 200 16533 "application/javascript; charset=utf-8" 31.293ms (74253ad3)
+2025-12-11T11:41:53.1992569+05:30 0HNHOFGMQQAFV:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 59.3178ms (74253ad3)
+2025-12-11T11:41:55.1739187+05:30 0HNHOFGMQQAFV:00000001 [INF] Executed DbCommand ("97"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-11T11:41:55.1739145+05:30 0HNHOFGMQQAFV:00000003 [INF] Executed DbCommand ("97"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-11T11:41:55.1960060+05:30 0HNHOFGMQQAFV:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 2064.9813ms (74253ad3)
+2025-12-11T11:41:55.1974141+05:30 0HNHOFGMQQAFV:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2277.768ms (74253ad3)
+2025-12-11T11:41:55.2364833+05:30 0HNHOFGMQQAFV:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-12-11T11:41:55.2606643+05:30 0HNHOFGMQQAFV:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/v1/swagger.json\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\",\"durationMs\":23,\"requestBody\":null}" (663ceef5)
+2025-12-11T11:41:55.3096989+05:30 0HNHOFGMQQAFV:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-11T11:41:55.3100795+05:30 0HNHOFGMQQAFV:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 73.8936ms (74253ad3)
+2025-12-11T11:43:05.0661416+05:30 0HNHOFGMQQAG0:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - "application/json" 328 (d509f86a)
+2025-12-11T11:43:05.0690322+05:30 0HNHOFGMQQAG0:00000001 [INF] 📡 Client IP detected: "127.0.0.1" (f8a23c3e)
+2025-12-11T11:43:05.0693761+05:30 0HNHOFGMQQAG0:00000001 [WRN] Local/private IP detected. Skipping geo lookup. IP: "127.0.0.1" (25082269)
+2025-12-11T11:43:05.0715996+05:30 0HNHOFGMQQAG0:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2025-12-11T11:43:05.0751541+05:30 0HNHOFGMQQAG0:00000001 [INF] Executing endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (500cc934)
+2025-12-11T11:43:05.1066241+05:30 0HNHOFGMQQAG0:00000001 [INF] Route matched with "{action = \"Create\", controller = \"ContactSubmissions\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto]] Create(CleanArchitecture.Application.DTOs.Contact.CreateContactSubmissionDto)" on controller "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController" ("CleanArchitecture.WebApi"). (122b2fdf)
+2025-12-11T11:46:06.2354867+05:30  [INF] 🚀 Embryon API started in "Development" (49d10e09)
+2025-12-11T11:46:06.2393804+05:30  [INF] 🌍 Real GeoLocation Enabled (fbadb743)
+2025-12-11T11:46:06.2503799+05:30  [INF] Email background service started. (8e0d769c)
+2025-12-11T11:46:06.3933112+05:30  [INF] Now listening on: "https://localhost:7281" (d826f4b8)
+2025-12-11T11:46:06.3933791+05:30  [INF] Now listening on: "http://localhost:5117" (d826f4b8)
+2025-12-11T11:46:06.4352421+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-12-11T11:46:06.4353317+05:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-12-11T11:46:06.4353564+05:30  [INF] Content root path: "D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi" (cc26f24e)
+2025-12-11T11:46:07.0679547+05:30 0HNHOFJ2IS8T4:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - null null (d509f86a)
+2025-12-11T11:46:07.2035844+05:30 0HNHOFJ2IS8T4:00000001 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.html\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\",\"durationMs\":55,\"requestBody\":null}" (663ceef5)
+2025-12-11T11:46:07.2121407+05:30 0HNHOFJ2IS8T4:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - null null (d509f86a)
+2025-12-11T11:46:07.2121408+05:30 0HNHOFJ2IS8T4:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-11T11:46:07.2152948+05:30 0HNHOFJ2IS8T4:00000003 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/index.js\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\",\"durationMs\":1,\"requestBody\":null}" (663ceef5)
+2025-12-11T11:46:07.2270804+05:30 0HNHOFJ2IS8T4:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-11T11:46:07.2345969+05:30 0HNHOFJ2IS8T4:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_framework/aspnetcore-browser-refresh.js""" - 200 16533 "application/javascript; charset=utf-8" 21.7577ms (74253ad3)
+2025-12-11T11:46:07.2677780+05:30 0HNHOFJ2IS8T4:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 41.3991ms (74253ad3)
+2025-12-11T11:46:08.1926000+05:30 0HNHOFJ2IS8T4:00000001 [INF] Executed DbCommand ("48"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-11T11:46:08.1926000+05:30 0HNHOFJ2IS8T4:00000003 [INF] Executed DbCommand ("48"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-11T11:46:08.2152063+05:30 0HNHOFJ2IS8T4:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 1003.1985ms (74253ad3)
+2025-12-11T11:46:08.2163080+05:30 0HNHOFJ2IS8T4:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1152.9079ms (74253ad3)
+2025-12-11T11:46:08.2541176+05:30 0HNHOFJ2IS8T4:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2025-12-11T11:46:08.2735886+05:30 0HNHOFJ2IS8T4:00000009 [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/swagger/v1/swagger.json\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\",\"durationMs\":18,\"requestBody\":null}" (663ceef5)
+2025-12-11T11:46:08.3233092+05:30 0HNHOFJ2IS8T4:00000009 [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-11T11:46:08.3238022+05:30 0HNHOFJ2IS8T4:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 69.9219ms (74253ad3)
+2025-12-11T11:46:12.3094035+05:30 0HNHOFJ2IS8T4:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7281""""/api/email/test""" - null null (d509f86a)
+2025-12-11T11:46:12.3133075+05:30 0HNHOFJ2IS8T4:0000000B [INF] 📡 Client IP detected: "127.0.0.1" (f8a23c3e)
+2025-12-11T11:46:12.3136548+05:30 0HNHOFJ2IS8T4:0000000B [WRN] Local/private IP detected. Skipping geo lookup. IP: "127.0.0.1" (25082269)
+2025-12-11T11:46:12.3190798+05:30 0HNHOFJ2IS8T4:0000000B [INF] Executing endpoint '"EmailTestController.TestEmail (CleanArchitecture.WebApi)"' (500cc934)
+2025-12-11T11:46:12.3315017+05:30 0HNHOFJ2IS8T4:0000000B [INF] Route matched with "{action = \"TestEmail\", controller = \"EmailTest\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TestEmail()" on controller "EmailTestController" ("CleanArchitecture.WebApi"). (122b2fdf)
+2025-12-11T11:46:19.2788578+05:30 0HNHOFJ2IS8T4:0000000B [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2025-12-11T11:46:19.2825088+05:30 0HNHOFJ2IS8T4:0000000B [INF] Executed action "EmailTestController.TestEmail (CleanArchitecture.WebApi)" in 6948.0585ms (afa2e885)
+2025-12-11T11:46:19.2826150+05:30 0HNHOFJ2IS8T4:0000000B [INF] Executed endpoint '"EmailTestController.TestEmail (CleanArchitecture.WebApi)"' (99874f2b)
+2025-12-11T11:46:19.2896419+05:30 0HNHOFJ2IS8T4:0000000B [INF] HTTP Request Log: "{\"method\":\"GET\",\"path\":\"/api/email/test\",\"query\":\"\",\"statusCode\":200,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\",\"durationMs\":6978,\"requestBody\":null}" (663ceef5)
+2025-12-11T11:46:19.2933483+05:30 0HNHOFJ2IS8T4:0000000B [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-11T11:46:19.2936664+05:30 0HNHOFJ2IS8T4:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7281""""/api/email/test""" - 200 null "application/json" 6984.4934ms (74253ad3)
+2025-12-11T11:46:19.3217233+05:30  [INF] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notifications] ([Id], [AdditionalData], [AttemptCount], [CreatedAt], [DeletedAt], [ErrorMessage], [Message], [SentAt], [Status], [Subject], [ToAddress], [Type], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);" (0723d8ff)
+2025-12-11T11:46:23.4403714+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-11T11:46:23.4489415+05:30  [INF] Email sent to "user-15e20815-b68e-4b43-a112-6ce191596e34@mailslurp.biz" (type="test") (07c3b7b7)
+2025-12-11T11:46:34.3939495+05:30 0HNHOFJ2IS8T5:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - "application/json" 328 (d509f86a)
+2025-12-11T11:46:34.3949669+05:30 0HNHOFJ2IS8T5:00000001 [INF] 📡 Client IP detected: "127.0.0.1" (f8a23c3e)
+2025-12-11T11:46:34.3950068+05:30 0HNHOFJ2IS8T5:00000001 [WRN] Local/private IP detected. Skipping geo lookup. IP: "127.0.0.1" (25082269)
+2025-12-11T11:46:34.3979068+05:30 0HNHOFJ2IS8T5:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2025-12-11T11:46:34.3987475+05:30 0HNHOFJ2IS8T5:00000001 [INF] Executing endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (500cc934)
+2025-12-11T11:46:34.4060951+05:30 0HNHOFJ2IS8T5:00000001 [INF] Route matched with "{action = \"Create\", controller = \"ContactSubmissions\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto]] Create(CleanArchitecture.Application.DTOs.Contact.CreateContactSubmissionDto)" on controller "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController" ("CleanArchitecture.WebApi"). (122b2fdf)
+2025-12-11T11:46:40.6532421+05:30 0HNHOFJ2IS8T5:00000001 [INF] GeoInfo Received → IP: "127.0.0.1", City: "Local", Region: "Development", Country: "Local Development", Latitude: null, Longitude: null (8f114958)
+2025-12-11T11:46:42.0282292+05:30 0HNHOFJ2IS8T5:00000001 [INF] Start processing HTTP request "POST" "https://challenges.cloudflare.com/turnstile/v0/siteverify" (338f1c77)
+2025-12-11T11:46:42.0289287+05:30 0HNHOFJ2IS8T5:00000001 [INF] Sending HTTP request "POST" "https://challenges.cloudflare.com/turnstile/v0/siteverify" (2e7ac211)
+2025-12-11T11:46:42.0935975+05:30 0HNHOFJ2IS8T5:00000001 [INF] Received HTTP response headers after 59.0624ms - 200 (f0742c1f)
+2025-12-11T11:46:42.0941137+05:30 0HNHOFJ2IS8T5:00000001 [INF] End processing HTTP request after 68.4581ms - 200 (7656b38e)
+2025-12-11T11:46:42.0972827+05:30 0HNHOFJ2IS8T5:00000001 [INF] CAPTCHA validated successfully for IP "127.0.0.1" (356f371a)
+2025-12-11T11:46:42.1578755+05:30 0HNHOFJ2IS8T5:00000001 [INF] Executed DbCommand ("14"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Guid), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Double), @p12='?' (DbType = Double), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (DbType = DateTime2), @p19='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ContactSubmissions] ([Id], [AdditionalData], [City], [CountryId], [CountryName], [CreatedAt], [DeletedAt], [Email], [FirstName], [IpAddress], [LastName], [Latitude], [Longitude], [Message], [Phone], [PhoneCountryCode], [State], [Subject], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);" (0723d8ff)
+2025-12-11T11:46:42.1590048+05:30 0HNHOFJ2IS8T5:00000001 [INF] Contact submission stored: ID=9dadbf3f-9ea8-4cfd-b821-07509c8610cf, Email="srug@gmail.com", IP="127.0.0.1", Lat=null, Lon=null (f25712b1)
+2025-12-11T11:46:42.1603432+05:30 0HNHOFJ2IS8T5:00000001 [INF] User confirmation email queued → "srug@gmail.com" (4016d990)
+2025-12-11T11:46:42.1616230+05:30 0HNHOFJ2IS8T5:00000001 [INF] Admin notification email queued → "user-15e20815-b68e-4b43-a112-6ce191596e34@mailslurp.biz" (de71a616)
+2025-12-11T11:46:42.2905477+05:30  [INF] Executed DbCommand ("88"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notifications] ([Id], [AdditionalData], [AttemptCount], [CreatedAt], [DeletedAt], [ErrorMessage], [Message], [SentAt], [Status], [Subject], [ToAddress], [Type], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);" (0723d8ff)
+2025-12-11T11:46:43.0355053+05:30 0HNHOFJ2IS8T5:00000001 [INF] Executing "CreatedAtActionResult", writing value of type '"CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto"'. (605b4265)
+2025-12-11T11:46:44.7401376+05:30 0HNHOFJ2IS8T5:00000001 [INF] Executed action "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)" in 10333.9344ms (afa2e885)
+2025-12-11T11:46:44.7405045+05:30 0HNHOFJ2IS8T5:00000001 [INF] Executed endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (99874f2b)
+2025-12-11T11:46:44.7446909+05:30 0HNHOFJ2IS8T5:00000001 [INF] HTTP Request Log: "{\"method\":\"POST\",\"path\":\"/api/ContactSubmissions\",\"query\":\"\",\"statusCode\":201,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1 Edg/143.0.0.0\",\"durationMs\":10349,\"requestBody\":null}" (663ceef5)
+2025-12-11T11:46:44.7493269+05:30 0HNHOFJ2IS8T5:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-11T11:46:44.7526269+05:30 0HNHOFJ2IS8T5:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - 201 null "application/json" 10358.933ms (74253ad3)
+2025-12-11T11:46:47.2427733+05:30  [INF] Executed DbCommand ("4"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-11T11:46:47.2430239+05:30  [INF] Email sent to "srug@gmail.com" (type="contact_user") (07c3b7b7)
+2025-12-11T11:46:47.2470631+05:30  [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notifications] ([Id], [AdditionalData], [AttemptCount], [CreatedAt], [DeletedAt], [ErrorMessage], [Message], [SentAt], [Status], [Subject], [ToAddress], [Type], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);" (0723d8ff)
+2025-12-11T11:46:50.6490293+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-11T11:46:50.6492297+05:30  [INF] Email sent to "user-15e20815-b68e-4b43-a112-6ce191596e34@mailslurp.biz" (type="contact_admin") (07c3b7b7)
+2025-12-11T11:52:04.6534880+05:30 0HNHOFJ2IS8T6:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - "application/json" 339 (d509f86a)
+2025-12-11T11:52:04.6550612+05:30 0HNHOFJ2IS8T6:00000001 [INF] 📡 Client IP detected: "127.0.0.1" (f8a23c3e)
+2025-12-11T11:52:04.6550998+05:30 0HNHOFJ2IS8T6:00000001 [WRN] Local/private IP detected. Skipping geo lookup. IP: "127.0.0.1" (25082269)
+2025-12-11T11:52:04.6555517+05:30 0HNHOFJ2IS8T6:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2025-12-11T11:52:04.6556459+05:30 0HNHOFJ2IS8T6:00000001 [INF] Executing endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (500cc934)
+2025-12-11T11:52:04.6557996+05:30 0HNHOFJ2IS8T6:00000001 [INF] Route matched with "{action = \"Create\", controller = \"ContactSubmissions\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto]] Create(CleanArchitecture.Application.DTOs.Contact.CreateContactSubmissionDto)" on controller "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController" ("CleanArchitecture.WebApi"). (122b2fdf)
+2025-12-11T11:52:04.6581347+05:30 0HNHOFJ2IS8T6:00000001 [INF] GeoInfo Received → IP: "127.0.0.1", City: "Local", Region: "Development", Country: "Local Development", Latitude: null, Longitude: null (8f114958)
+2025-12-11T11:52:04.6584138+05:30 0HNHOFJ2IS8T6:00000001 [INF] Start processing HTTP request "POST" "https://challenges.cloudflare.com/turnstile/v0/siteverify" (338f1c77)
+2025-12-11T11:52:04.6584470+05:30 0HNHOFJ2IS8T6:00000001 [INF] Sending HTTP request "POST" "https://challenges.cloudflare.com/turnstile/v0/siteverify" (2e7ac211)
+2025-12-11T11:52:04.6962793+05:30 0HNHOFJ2IS8T6:00000001 [INF] Received HTTP response headers after 37.767ms - 200 (f0742c1f)
+2025-12-11T11:52:04.6963396+05:30 0HNHOFJ2IS8T6:00000001 [INF] End processing HTTP request after 37.9535ms - 200 (7656b38e)
+2025-12-11T11:52:04.6965449+05:30 0HNHOFJ2IS8T6:00000001 [INF] CAPTCHA validated successfully for IP "127.0.0.1" (356f371a)
+2025-12-11T11:52:04.7151436+05:30 0HNHOFJ2IS8T6:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Guid), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Double), @p12='?' (DbType = Double), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (DbType = DateTime2), @p19='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ContactSubmissions] ([Id], [AdditionalData], [City], [CountryId], [CountryName], [CreatedAt], [DeletedAt], [Email], [FirstName], [IpAddress], [LastName], [Latitude], [Longitude], [Message], [Phone], [PhoneCountryCode], [State], [Subject], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);" (0723d8ff)
+2025-12-11T11:52:04.7154196+05:30 0HNHOFJ2IS8T6:00000001 [INF] Contact submission stored: ID=a2c304a8-768b-49d3-a6af-03d5a815c950, Email="slugemailTest@gmail.com", IP="127.0.0.1", Lat=null, Lon=null (f25712b1)
+2025-12-11T11:52:04.7154727+05:30 0HNHOFJ2IS8T6:00000001 [INF] User confirmation email queued → "slugemailTest@gmail.com" (4016d990)
+2025-12-11T11:52:04.7155598+05:30 0HNHOFJ2IS8T6:00000001 [INF] Admin notification email queued → "user-15e20815-b68e-4b43-a112-6ce191596e34@mailslurp.biz" (de71a616)
+2025-12-11T11:52:04.7161278+05:30 0HNHOFJ2IS8T6:00000001 [INF] Executing "CreatedAtActionResult", writing value of type '"CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto"'. (605b4265)
+2025-12-11T11:52:04.7168523+05:30 0HNHOFJ2IS8T6:00000001 [INF] Executed action "CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)" in 60.9977ms (afa2e885)
+2025-12-11T11:52:04.7169856+05:30 0HNHOFJ2IS8T6:00000001 [INF] Executed endpoint '"CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.Create (CleanArchitecture.WebApi)"' (99874f2b)
+2025-12-11T11:52:04.7177066+05:30 0HNHOFJ2IS8T6:00000001 [INF] HTTP Request Log: "{\"method\":\"POST\",\"path\":\"/api/ContactSubmissions\",\"query\":\"\",\"statusCode\":201,\"ip\":\"::1\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0\",\"durationMs\":62,\"requestBody\":null}" (663ceef5)
+2025-12-11T11:52:04.7198382+05:30  [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notifications] ([Id], [AdditionalData], [AttemptCount], [CreatedAt], [DeletedAt], [ErrorMessage], [Message], [SentAt], [Status], [Subject], [ToAddress], [Type], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);" (0723d8ff)
+2025-12-11T11:52:04.7223308+05:30 0HNHOFJ2IS8T6:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [PageVisits] ([Id], [AdditionalData], [CreatedAt], [DeletedAt], [IpAddress], [PageUrl], [Referrer], [UpdatedAt], [UserAgent])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2025-12-11T11:52:04.7227179+05:30 0HNHOFJ2IS8T6:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7281""""/api/ContactSubmissions""" - 201 null "application/json" 71.345ms (74253ad3)
+2025-12-11T11:52:08.3036964+05:30  [INF] Executed DbCommand ("3"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-11T11:52:08.3038904+05:30  [INF] Email sent to "slugemailTest@gmail.com" (type="contact_user") (07c3b7b7)
+2025-12-11T11:52:08.3056811+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notifications] ([Id], [AdditionalData], [AttemptCount], [CreatedAt], [DeletedAt], [ErrorMessage], [Message], [SentAt], [Status], [Subject], [ToAddress], [Type], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);" (0723d8ff)
+2025-12-11T11:52:11.9118232+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=["@p12='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [CreatedAt] = @p2, [DeletedAt] = @p3, [ErrorMessage] = @p4, [Message] = @p5, [SentAt] = @p6, [Status] = @p7, [Subject] = @p8, [ToAddress] = @p9, [Type] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;" (0723d8ff)
+2025-12-11T11:52:11.9120439+05:30  [INF] Email sent to "user-15e20815-b68e-4b43-a112-6ce191596e34@mailslurp.biz" (type="contact_admin") (07c3b7b7)
