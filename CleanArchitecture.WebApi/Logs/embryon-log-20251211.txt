@@ -211,3 +211,371 @@ UPDATE [Notifications] SET [AdditionalData] = @p0, [AttemptCount] = @p1, [Create
 OUTPUT 1
 WHERE [Id] = @p12;" (0723d8ff)
 2025-12-11T11:52:11.9120439+05:30  [INF] Email sent to "user-15e20815-b68e-4b43-a112-6ce191596e34@mailslurp.biz" (type="contact_admin") (07c3b7b7)
+2025-12-11T12:22:55.1053686+05:30  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-12-11T12:22:55.1240450+05:30  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-12-11T12:22:55.1255094+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2025-12-11T12:22:55.1259314+05:30  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2025-12-11T12:22:55.1375056+05:30  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2025-12-11T12:22:55.1474167+05:30  [INF] Applying migration '"20251211065240_ApplyConfigurationHook"'. (0e2ac64d)
+2025-12-11T12:22:55.2489990+05:30  [INF] Executed DbCommand ("56"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [Cities] DROP CONSTRAINT [FK_Cities_States_StateId];" (0723d8ff)
+2025-12-11T12:22:55.2525427+05:30  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [States] DROP CONSTRAINT [FK_States_Countries_CountryId];" (0723d8ff)
+2025-12-11T12:22:55.3384490+05:30  [INF] Executed DbCommand ("86"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Webhooks]') AND [c].[name] = N'Url');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Webhooks] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Webhooks] ALTER COLUMN [Url] nvarchar(500) NULL;" (0723d8ff)
+2025-12-11T12:22:55.3596052+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var1 sysname;
+SELECT @var1 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Webhooks]') AND [c].[name] = N'SecretKey');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Webhooks] DROP CONSTRAINT [' + @var1 + '];');
+ALTER TABLE [Webhooks] ALTER COLUMN [SecretKey] nvarchar(255) NULL;" (0723d8ff)
+2025-12-11T12:22:55.3821575+05:30  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var2 sysname;
+SELECT @var2 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Webhooks]') AND [c].[name] = N'Event');
+IF @var2 IS NOT NULL EXEC(N'ALTER TABLE [Webhooks] DROP CONSTRAINT [' + @var2 + '];');
+ALTER TABLE [Webhooks] ALTER COLUMN [Event] nvarchar(100) NULL;" (0723d8ff)
+2025-12-11T12:22:55.4039942+05:30  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var3 sysname;
+SELECT @var3 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[States]') AND [c].[name] = N'Name');
+IF @var3 IS NOT NULL EXEC(N'ALTER TABLE [States] DROP CONSTRAINT [' + @var3 + '];');
+ALTER TABLE [States] ALTER COLUMN [Name] nvarchar(150) NULL;" (0723d8ff)
+2025-12-11T12:22:55.5541654+05:30  [INF] Executed DbCommand ("150"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var4 sysname;
+SELECT @var4 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[PageVisits]') AND [c].[name] = N'UserAgent');
+IF @var4 IS NOT NULL EXEC(N'ALTER TABLE [PageVisits] DROP CONSTRAINT [' + @var4 + '];');
+ALTER TABLE [PageVisits] ALTER COLUMN [UserAgent] nvarchar(300) NULL;" (0723d8ff)
+2025-12-11T12:22:55.8635181+05:30  [INF] Executed DbCommand ("309"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var5 sysname;
+SELECT @var5 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[PageVisits]') AND [c].[name] = N'Referrer');
+IF @var5 IS NOT NULL EXEC(N'ALTER TABLE [PageVisits] DROP CONSTRAINT [' + @var5 + '];');
+ALTER TABLE [PageVisits] ALTER COLUMN [Referrer] nvarchar(300) NULL;" (0723d8ff)
+2025-12-11T12:22:55.8973277+05:30  [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var6 sysname;
+SELECT @var6 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[PageVisits]') AND [c].[name] = N'PageUrl');
+IF @var6 IS NOT NULL EXEC(N'ALTER TABLE [PageVisits] DROP CONSTRAINT [' + @var6 + '];');
+ALTER TABLE [PageVisits] ALTER COLUMN [PageUrl] nvarchar(500) NULL;" (0723d8ff)
+2025-12-11T12:22:55.9304506+05:30  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var7 sysname;
+SELECT @var7 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[PageVisits]') AND [c].[name] = N'IpAddress');
+IF @var7 IS NOT NULL EXEC(N'ALTER TABLE [PageVisits] DROP CONSTRAINT [' + @var7 + '];');
+ALTER TABLE [PageVisits] ALTER COLUMN [IpAddress] nvarchar(50) NULL;" (0723d8ff)
+2025-12-11T12:22:55.9522506+05:30  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var8 sysname;
+SELECT @var8 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Notifications]') AND [c].[name] = N'Type');
+IF @var8 IS NOT NULL EXEC(N'ALTER TABLE [Notifications] DROP CONSTRAINT [' + @var8 + '];');
+ALTER TABLE [Notifications] ALTER COLUMN [Type] nvarchar(50) NULL;" (0723d8ff)
+2025-12-11T12:22:55.9764180+05:30  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var9 sysname;
+SELECT @var9 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Notifications]') AND [c].[name] = N'ToAddress');
+IF @var9 IS NOT NULL EXEC(N'ALTER TABLE [Notifications] DROP CONSTRAINT [' + @var9 + '];');
+ALTER TABLE [Notifications] ALTER COLUMN [ToAddress] nvarchar(255) NULL;" (0723d8ff)
+2025-12-11T12:22:55.9980068+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var10 sysname;
+SELECT @var10 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Notifications]') AND [c].[name] = N'Subject');
+IF @var10 IS NOT NULL EXEC(N'ALTER TABLE [Notifications] DROP CONSTRAINT [' + @var10 + '];');
+ALTER TABLE [Notifications] ALTER COLUMN [Subject] nvarchar(255) NULL;" (0723d8ff)
+2025-12-11T12:22:56.0188907+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var11 sysname;
+SELECT @var11 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Notifications]') AND [c].[name] = N'Status');
+IF @var11 IS NOT NULL EXEC(N'ALTER TABLE [Notifications] DROP CONSTRAINT [' + @var11 + '];');
+ALTER TABLE [Notifications] ALTER COLUMN [Status] nvarchar(50) NULL;" (0723d8ff)
+2025-12-11T12:22:56.0423898+05:30  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var12 sysname;
+SELECT @var12 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Notifications]') AND [c].[name] = N'Message');
+IF @var12 IS NOT NULL EXEC(N'ALTER TABLE [Notifications] DROP CONSTRAINT [' + @var12 + '];');
+ALTER TABLE [Notifications] ALTER COLUMN [Message] NVARCHAR(MAX) NULL;" (0723d8ff)
+2025-12-11T12:22:56.0622957+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var13 sysname;
+SELECT @var13 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Notifications]') AND [c].[name] = N'ErrorMessage');
+IF @var13 IS NOT NULL EXEC(N'ALTER TABLE [Notifications] DROP CONSTRAINT [' + @var13 + '];');
+ALTER TABLE [Notifications] ALTER COLUMN [ErrorMessage] NVARCHAR(MAX) NULL;" (0723d8ff)
+2025-12-11T12:22:56.0863067+05:30  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var14 sysname;
+SELECT @var14 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ErrorLogs]') AND [c].[name] = N'UserAgent');
+IF @var14 IS NOT NULL EXEC(N'ALTER TABLE [ErrorLogs] DROP CONSTRAINT [' + @var14 + '];');
+ALTER TABLE [ErrorLogs] ALTER COLUMN [UserAgent] nvarchar(300) NULL;" (0723d8ff)
+2025-12-11T12:22:56.1062253+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var15 sysname;
+SELECT @var15 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ErrorLogs]') AND [c].[name] = N'StackTrace');
+IF @var15 IS NOT NULL EXEC(N'ALTER TABLE [ErrorLogs] DROP CONSTRAINT [' + @var15 + '];');
+ALTER TABLE [ErrorLogs] ALTER COLUMN [StackTrace] NVARCHAR(MAX) NULL;" (0723d8ff)
+2025-12-11T12:22:56.1265852+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var16 sysname;
+SELECT @var16 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ErrorLogs]') AND [c].[name] = N'IpAddress');
+IF @var16 IS NOT NULL EXEC(N'ALTER TABLE [ErrorLogs] DROP CONSTRAINT [' + @var16 + '];');
+ALTER TABLE [ErrorLogs] ALTER COLUMN [IpAddress] nvarchar(50) NULL;" (0723d8ff)
+2025-12-11T12:22:56.1468981+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var17 sysname;
+SELECT @var17 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ErrorLogs]') AND [c].[name] = N'HttpMethod');
+IF @var17 IS NOT NULL EXEC(N'ALTER TABLE [ErrorLogs] DROP CONSTRAINT [' + @var17 + '];');
+ALTER TABLE [ErrorLogs] ALTER COLUMN [HttpMethod] nvarchar(20) NULL;" (0723d8ff)
+2025-12-11T12:22:56.1661045+05:30  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var18 sysname;
+SELECT @var18 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ErrorLogs]') AND [c].[name] = N'ErrorMessage');
+IF @var18 IS NOT NULL EXEC(N'ALTER TABLE [ErrorLogs] DROP CONSTRAINT [' + @var18 + '];');
+ALTER TABLE [ErrorLogs] ALTER COLUMN [ErrorMessage] NVARCHAR(MAX) NULL;" (0723d8ff)
+2025-12-11T12:22:56.1873091+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var19 sysname;
+SELECT @var19 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ErrorLogs]') AND [c].[name] = N'Endpoint');
+IF @var19 IS NOT NULL EXEC(N'ALTER TABLE [ErrorLogs] DROP CONSTRAINT [' + @var19 + '];');
+ALTER TABLE [ErrorLogs] ALTER COLUMN [Endpoint] nvarchar(300) NULL;" (0723d8ff)
+2025-12-11T12:22:56.2087248+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var20 sysname;
+SELECT @var20 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Countries]') AND [c].[name] = N'PhoneCode');
+IF @var20 IS NOT NULL EXEC(N'ALTER TABLE [Countries] DROP CONSTRAINT [' + @var20 + '];');
+ALTER TABLE [Countries] ALTER COLUMN [PhoneCode] nvarchar(10) NULL;" (0723d8ff)
+2025-12-11T12:22:56.2288584+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var21 sysname;
+SELECT @var21 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Countries]') AND [c].[name] = N'Name');
+IF @var21 IS NOT NULL EXEC(N'ALTER TABLE [Countries] DROP CONSTRAINT [' + @var21 + '];');
+ALTER TABLE [Countries] ALTER COLUMN [Name] nvarchar(150) NULL;" (0723d8ff)
+2025-12-11T12:22:56.2492155+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var22 sysname;
+SELECT @var22 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Countries]') AND [c].[name] = N'IsoCode');
+IF @var22 IS NOT NULL EXEC(N'ALTER TABLE [Countries] DROP CONSTRAINT [' + @var22 + '];');
+ALTER TABLE [Countries] ALTER COLUMN [IsoCode] nvarchar(2) NULL;" (0723d8ff)
+2025-12-11T12:22:56.2712500+05:30  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var23 sysname;
+SELECT @var23 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ContactSubmissions]') AND [c].[name] = N'Subject');
+IF @var23 IS NOT NULL EXEC(N'ALTER TABLE [ContactSubmissions] DROP CONSTRAINT [' + @var23 + '];');
+ALTER TABLE [ContactSubmissions] ALTER COLUMN [Subject] nvarchar(255) NULL;" (0723d8ff)
+2025-12-11T12:22:56.2918262+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var24 sysname;
+SELECT @var24 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ContactSubmissions]') AND [c].[name] = N'State');
+IF @var24 IS NOT NULL EXEC(N'ALTER TABLE [ContactSubmissions] DROP CONSTRAINT [' + @var24 + '];');
+ALTER TABLE [ContactSubmissions] ALTER COLUMN [State] nvarchar(150) NULL;" (0723d8ff)
+2025-12-11T12:22:56.3150487+05:30  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var25 sysname;
+SELECT @var25 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ContactSubmissions]') AND [c].[name] = N'PhoneCountryCode');
+IF @var25 IS NOT NULL EXEC(N'ALTER TABLE [ContactSubmissions] DROP CONSTRAINT [' + @var25 + '];');
+ALTER TABLE [ContactSubmissions] ALTER COLUMN [PhoneCountryCode] nvarchar(10) NULL;" (0723d8ff)
+2025-12-11T12:22:56.3360312+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var26 sysname;
+SELECT @var26 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ContactSubmissions]') AND [c].[name] = N'Phone');
+IF @var26 IS NOT NULL EXEC(N'ALTER TABLE [ContactSubmissions] DROP CONSTRAINT [' + @var26 + '];');
+ALTER TABLE [ContactSubmissions] ALTER COLUMN [Phone] nvarchar(50) NULL;" (0723d8ff)
+2025-12-11T12:22:56.3552560+05:30  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var27 sysname;
+SELECT @var27 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ContactSubmissions]') AND [c].[name] = N'Message');
+IF @var27 IS NOT NULL EXEC(N'ALTER TABLE [ContactSubmissions] DROP CONSTRAINT [' + @var27 + '];');
+ALTER TABLE [ContactSubmissions] ALTER COLUMN [Message] NVARCHAR(MAX) NULL;" (0723d8ff)
+2025-12-11T12:22:56.3761201+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var28 sysname;
+SELECT @var28 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ContactSubmissions]') AND [c].[name] = N'LastName');
+IF @var28 IS NOT NULL EXEC(N'ALTER TABLE [ContactSubmissions] DROP CONSTRAINT [' + @var28 + '];');
+ALTER TABLE [ContactSubmissions] ALTER COLUMN [LastName] nvarchar(150) NULL;" (0723d8ff)
+2025-12-11T12:22:56.3967234+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var29 sysname;
+SELECT @var29 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ContactSubmissions]') AND [c].[name] = N'FirstName');
+IF @var29 IS NOT NULL EXEC(N'ALTER TABLE [ContactSubmissions] DROP CONSTRAINT [' + @var29 + '];');
+ALTER TABLE [ContactSubmissions] ALTER COLUMN [FirstName] nvarchar(150) NULL;" (0723d8ff)
+2025-12-11T12:22:56.4182470+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var30 sysname;
+SELECT @var30 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ContactSubmissions]') AND [c].[name] = N'Email');
+IF @var30 IS NOT NULL EXEC(N'ALTER TABLE [ContactSubmissions] DROP CONSTRAINT [' + @var30 + '];');
+ALTER TABLE [ContactSubmissions] ALTER COLUMN [Email] nvarchar(200) NULL;" (0723d8ff)
+2025-12-11T12:22:56.4387963+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var31 sysname;
+SELECT @var31 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ContactSubmissions]') AND [c].[name] = N'CountryName');
+IF @var31 IS NOT NULL EXEC(N'ALTER TABLE [ContactSubmissions] DROP CONSTRAINT [' + @var31 + '];');
+ALTER TABLE [ContactSubmissions] ALTER COLUMN [CountryName] nvarchar(150) NULL;" (0723d8ff)
+2025-12-11T12:22:56.4626993+05:30  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var32 sysname;
+SELECT @var32 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ContactSubmissions]') AND [c].[name] = N'City');
+IF @var32 IS NOT NULL EXEC(N'ALTER TABLE [ContactSubmissions] DROP CONSTRAINT [' + @var32 + '];');
+ALTER TABLE [ContactSubmissions] ALTER COLUMN [City] nvarchar(150) NULL;" (0723d8ff)
+2025-12-11T12:22:56.4866059+05:30  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var33 sysname;
+SELECT @var33 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Cities]') AND [c].[name] = N'Name');
+IF @var33 IS NOT NULL EXEC(N'ALTER TABLE [Cities] DROP CONSTRAINT [' + @var33 + '];');
+ALTER TABLE [Cities] ALTER COLUMN [Name] nvarchar(150) NULL;" (0723d8ff)
+2025-12-11T12:22:56.5103356+05:30  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var34 sysname;
+SELECT @var34 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AuditLogs]') AND [c].[name] = N'TableName');
+IF @var34 IS NOT NULL EXEC(N'ALTER TABLE [AuditLogs] DROP CONSTRAINT [' + @var34 + '];');
+ALTER TABLE [AuditLogs] ALTER COLUMN [TableName] nvarchar(100) NULL;" (0723d8ff)
+2025-12-11T12:22:56.5309553+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var35 sysname;
+SELECT @var35 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AuditLogs]') AND [c].[name] = N'OldData');
+IF @var35 IS NOT NULL EXEC(N'ALTER TABLE [AuditLogs] DROP CONSTRAINT [' + @var35 + '];');
+ALTER TABLE [AuditLogs] ALTER COLUMN [OldData] NVARCHAR(MAX) NULL;" (0723d8ff)
+2025-12-11T12:22:56.5516769+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var36 sysname;
+SELECT @var36 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AuditLogs]') AND [c].[name] = N'NewData');
+IF @var36 IS NOT NULL EXEC(N'ALTER TABLE [AuditLogs] DROP CONSTRAINT [' + @var36 + '];');
+ALTER TABLE [AuditLogs] ALTER COLUMN [NewData] NVARCHAR(MAX) NULL;" (0723d8ff)
+2025-12-11T12:22:56.5739703+05:30  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var37 sysname;
+SELECT @var37 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AuditLogs]') AND [c].[name] = N'CreatedBy');
+IF @var37 IS NOT NULL EXEC(N'ALTER TABLE [AuditLogs] DROP CONSTRAINT [' + @var37 + '];');
+ALTER TABLE [AuditLogs] ALTER COLUMN [CreatedBy] nvarchar(200) NULL;" (0723d8ff)
+2025-12-11T12:22:56.5948502+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var38 sysname;
+SELECT @var38 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AuditLogs]') AND [c].[name] = N'Action');
+IF @var38 IS NOT NULL EXEC(N'ALTER TABLE [AuditLogs] DROP CONSTRAINT [' + @var38 + '];');
+ALTER TABLE [AuditLogs] ALTER COLUMN [Action] nvarchar(20) NULL;" (0723d8ff)
+2025-12-11T12:22:56.6158994+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var39 sysname;
+SELECT @var39 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AppSettings]') AND [c].[name] = N'Value');
+IF @var39 IS NOT NULL EXEC(N'ALTER TABLE [AppSettings] DROP CONSTRAINT [' + @var39 + '];');
+ALTER TABLE [AppSettings] ALTER COLUMN [Value] NVARCHAR(MAX) NULL;" (0723d8ff)
+2025-12-11T12:22:56.6367835+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var40 sysname;
+SELECT @var40 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AppSettings]') AND [c].[name] = N'KeyName');
+IF @var40 IS NOT NULL EXEC(N'ALTER TABLE [AppSettings] DROP CONSTRAINT [' + @var40 + '];');
+ALTER TABLE [AppSettings] ALTER COLUMN [KeyName] nvarchar(150) NULL;" (0723d8ff)
+2025-12-11T12:22:56.6572360+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var41 sysname;
+SELECT @var41 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AppSettings]') AND [c].[name] = N'Description');
+IF @var41 IS NOT NULL EXEC(N'ALTER TABLE [AppSettings] DROP CONSTRAINT [' + @var41 + '];');
+ALTER TABLE [AppSettings] ALTER COLUMN [Description] nvarchar(500) NULL;" (0723d8ff)
+2025-12-11T12:22:56.6769320+05:30  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var42 sysname;
+SELECT @var42 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AppSettings]') AND [c].[name] = N'AdditionalData');
+IF @var42 IS NOT NULL EXEC(N'ALTER TABLE [AppSettings] DROP CONSTRAINT [' + @var42 + '];');
+ALTER TABLE [AppSettings] ALTER COLUMN [AdditionalData] NVARCHAR(MAX) NULL;" (0723d8ff)
+2025-12-11T12:22:56.6856699+05:30  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [Cities] ADD CONSTRAINT [FK_Cities_States_StateId] FOREIGN KEY ([StateId]) REFERENCES [States] ([Id]) ON DELETE NO ACTION;" (0723d8ff)
+2025-12-11T12:22:56.6865984+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE [States] ADD CONSTRAINT [FK_States_Countries_CountryId] FOREIGN KEY ([CountryId]) REFERENCES [Countries] ([Id]) ON DELETE NO ACTION;" (0723d8ff)
+2025-12-11T12:22:56.6877553+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20251211065240_ApplyConfigurationHook', N'8.0.1');" (0723d8ff)
