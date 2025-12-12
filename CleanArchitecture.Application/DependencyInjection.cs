@@ -1,5 +1,4 @@
 ﻿using CleanArchitecture.Application.Interfaces;
-using CleanArchitecture.Application.Services;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 

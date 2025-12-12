@@ -140,8 +140,9 @@ namespace CleanArchitecture.WebApi.Controllers
                 UserAgent = geo?.user_agent,
 
                 // Assign latitude and longitude
-                Latitude = geo?.latitude,
-                Longitude = geo?.longitude
+                Latitude = dto.Latitude ?? geo?.latitude,
+                Longitude = dto.Longitude ?? geo?.longitude,
+
             };
 
             // Create and save record via service layer
