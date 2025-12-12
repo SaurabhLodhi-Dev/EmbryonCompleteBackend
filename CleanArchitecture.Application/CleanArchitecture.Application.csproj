@@ -22,18 +22,19 @@
 		<PackageReference Include="AutoMapper" Version="12.0.1" />
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+		<!-- ✅ Correct sanitization package -->
+		<PackageReference Include="HtmlSanitizer" Version="8.1.870" />
 
 		<!-- 🔥 FIX PACKAGE DOWNGRADES -->
-		<PackageReference Include="System.Threading" Version="4.3.0" />
+		<!--<PackageReference Include="System.Threading" Version="4.3.0" />
 		<PackageReference Include="System.Text.Encoding.Extensions" Version="4.3.0" />
 		<PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
 		<PackageReference Include="System.IO.FileSystem.Primitives" Version="4.3.0" />
-		<PackageReference Include="System.IO" Version="4.3.0" />
+		<PackageReference Include="System.IO" Version="4.3.0" />-->
 
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Common\" />
 		<Folder Include="ContactSubmissions\EventHandlers\" />
 	</ItemGroup>
 

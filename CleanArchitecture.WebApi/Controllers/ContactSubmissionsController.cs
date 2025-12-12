@@ -2,6 +2,7 @@
 using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.WebApi.Middlewares;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace CleanArchitecture.WebApi.Controllers
 {
@@ -91,6 +92,7 @@ namespace CleanArchitecture.WebApi.Controllers
         /// </summary>
         /// <param name="dto">Incoming request payload from UI</param>
         /// <returns>Created submission DTO</returns>
+        [EnableRateLimiting("ContactLimiter")]
         [HttpPost]
         [ProducesResponseType(typeof(ContactSubmissionDto), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -138,8 +140,9 @@ namespace CleanArchitecture.WebApi.Controllers
                 UserAgent = geo?.user_agent,
 
                 // Assign latitude and longitude
-                Latitude = geo?.latitude,
-                Longitude = geo?.longitude
+                Latitude = dto.Latitude ?? geo?.latitude,
+                Longitude = dto.Longitude ?? geo?.longitude,
+
             };
 
             // Create and save record via service layer

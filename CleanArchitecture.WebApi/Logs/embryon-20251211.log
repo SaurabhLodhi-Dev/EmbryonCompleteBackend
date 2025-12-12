@@ -1,0 +1,642 @@
+2025-12-11 13:10:45.991 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-11 13:10:46.082 +05:30 [INF] 🚀 Embryon API started in Development
+2025-12-11 13:10:46.084 +05:30 [INF] 🌍 GeoLocation Enabled
+2025-12-11 13:10:46.085 +05:30 [DBG] Hosting starting
+2025-12-11 13:10:46.092 +05:30 [INF] Email background service started.
+2025-12-11 13:10:46.099 +05:30 [DBG] Middleware loaded
+2025-12-11 13:10:46.100 +05:30 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16533 B).
+2025-12-11 13:10:46.102 +05:30 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-12-11 13:10:46.168 +05:30 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-12-11 13:10:46.226 +05:30 [INF] Now listening on: https://localhost:7281
+2025-12-11 13:10:46.227 +05:30 [INF] Now listening on: http://localhost:5117
+2025-12-11 13:10:46.228 +05:30 [DBG] Loaded hosting startup assembly CleanArchitecture.WebApi
+2025-12-11 13:10:46.228 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-12-11 13:10:46.229 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-12-11 13:10:46.229 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-12-11 13:10:46.242 +05:30 [DBG] Connection id "0HNHOH2CBQ4NT" accepted.
+2025-12-11 13:10:46.242 +05:30 [DBG] Connection id "0HNHOH2CBQ4NU" accepted.
+2025-12-11 13:10:46.243 +05:30 [DBG] Connection id "0HNHOH2CBQ4NT" started.
+2025-12-11 13:10:46.244 +05:30 [DBG] Connection id "0HNHOH2CBQ4NU" started.
+2025-12-11 13:10:46.254 +05:30 [DBG] Connection id "0HNHOH2CBQ4NU" received FIN.
+2025-12-11 13:10:46.254 +05:30 [DBG] Connection id "0HNHOH2CBQ4NT" received FIN.
+2025-12-11 13:10:46.264 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-11 13:10:46.264 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-11 13:10:46.291 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-11 13:10:46.294 +05:30 [INF] Hosting environment: Development
+2025-12-11 13:10:46.294 +05:30 [INF] Content root path: D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi
+2025-12-11 13:10:46.295 +05:30 [DBG] Hosting started
+2025-12-11 13:10:46.296 +05:30 [DBG] Connection id "0HNHOH2CBQ4NT" stopped.
+2025-12-11 13:10:46.296 +05:30 [DBG] Connection id "0HNHOH2CBQ4NU" stopped.
+2025-12-11 13:10:46.299 +05:30 [DBG] Connection id "0HNHOH2CBQ4NT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-11 13:10:46.299 +05:30 [DBG] Connection id "0HNHOH2CBQ4NU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-11 13:10:46.433 +05:30 [DBG] Connection id "0HNHOH2CBQ4NV" accepted.
+2025-12-11 13:10:46.434 +05:30 [DBG] Connection id "0HNHOH2CBQ4NV" started.
+2025-12-11 13:10:46.464 +05:30 [DBG] Connection 0HNHOH2CBQ4NV established using the following protocol: "Tls12"
+2025-12-11 13:10:46.495 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/swagger/index.html - null null
+2025-12-11 13:10:46.554 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-11 13:10:46.566 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-12-11 13:10:46.567 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:10:46.716 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-12-11 13:10:46.723 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-12-11 13:10:46.737 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/swagger/index.html","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":57,"requestBody":null}
+2025-12-11 13:10:46.739 +05:30 [INF] PageVisit recorded: /swagger/index.html 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 
+2025-12-11 13:10:46.740 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2025-12-11 13:10:46.743 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-12-11 13:10:46.747 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/swagger/index.html - 200 null text/html;charset=utf-8 254.7377ms
+2025-12-11 13:10:46.749 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/swagger/index.js - null null
+2025-12-11 13:10:46.749 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-11 13:10:46.754 +05:30 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-12-11 13:10:46.757 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:10:46.760 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/swagger/index.js","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":1,"requestBody":null}
+2025-12-11 13:10:46.761 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/_vs/browserLink - null null
+2025-12-11 13:10:46.766 +05:30 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-11 13:10:46.767 +05:30 [INF] PageVisit recorded: /swagger/index.js 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 https://localhost:7281/swagger/index.html
+2025-12-11 13:10:46.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 22.2514ms
+2025-12-11 13:10:46.772 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/swagger/index.js - 200 null application/javascript;charset=utf-8 23.82ms
+2025-12-11 13:10:46.808 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.6741ms
+2025-12-11 13:10:46.858 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/swagger/v1/swagger.json - null null
+2025-12-11 13:10:46.860 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-12-11 13:10:46.862 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:10:46.878 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/swagger/v1/swagger.json","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":15,"requestBody":null}
+2025-12-11 13:10:46.880 +05:30 [INF] PageVisit recorded: /swagger/v1/swagger.json 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 https://localhost:7281/swagger/index.html
+2025-12-11 13:10:46.884 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.0904ms
+2025-12-11 13:11:03.931 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/swagger/api/health - null null
+2025-12-11 13:11:03.936 +05:30 [DBG] No candidates found for the request path '/swagger/api/health'
+2025-12-11 13:11:03.936 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:11:03.940 +05:30 [DBG] The request path /api/health does not match a supported file type
+2025-12-11 13:11:03.942 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-11 13:11:03.943 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-11 13:11:03.949 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/swagger/api/health","query":"","statusCode":404,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":10,"requestBody":null}
+2025-12-11 13:11:03.950 +05:30 [INF] PageVisit recorded: /swagger/api/health 404 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 
+2025-12-11 13:11:03.951 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/swagger/api/health - 404 null null 20.2227ms
+2025-12-11 13:11:03.954 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7281/swagger/api/health, Response status code: 404
+2025-12-11 13:11:10.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/api/health - null null
+2025-12-11 13:11:10.608 +05:30 [DBG] No candidates found for the request path '/api/health'
+2025-12-11 13:11:10.609 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:11:10.610 +05:30 [DBG] The request path  does not match the path filter
+2025-12-11 13:11:10.610 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-11 13:11:10.611 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-11 13:11:10.612 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/api/health","query":"","statusCode":404,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":2,"requestBody":null}
+2025-12-11 13:11:10.613 +05:30 [INF] PageVisit recorded: /api/health 404 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 
+2025-12-11 13:11:10.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/api/health - 404 null null 14.1169ms
+2025-12-11 13:11:10.624 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7281/api/health, Response status code: 404
+2025-12-11 13:14:05.089 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-11 13:14:05.169 +05:30 [INF] 🚀 Embryon API started in Development
+2025-12-11 13:14:05.170 +05:30 [INF] 🌍 GeoLocation Enabled
+2025-12-11 13:14:05.171 +05:30 [DBG] Hosting starting
+2025-12-11 13:14:05.177 +05:30 [INF] Email background service started.
+2025-12-11 13:14:05.183 +05:30 [DBG] Middleware loaded
+2025-12-11 13:14:05.184 +05:30 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16533 B).
+2025-12-11 13:14:05.185 +05:30 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-12-11 13:14:05.250 +05:30 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-12-11 13:14:05.318 +05:30 [INF] Now listening on: https://localhost:7281
+2025-12-11 13:14:05.318 +05:30 [INF] Now listening on: http://localhost:5117
+2025-12-11 13:14:05.319 +05:30 [DBG] Loaded hosting startup assembly CleanArchitecture.WebApi
+2025-12-11 13:14:05.320 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-12-11 13:14:05.320 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-12-11 13:14:05.321 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-12-11 13:14:05.363 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-11 13:14:05.365 +05:30 [INF] Hosting environment: Development
+2025-12-11 13:14:05.365 +05:30 [INF] Content root path: D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi
+2025-12-11 13:14:05.366 +05:30 [DBG] Hosting started
+2025-12-11 13:14:05.679 +05:30 [DBG] Connection id "0HNHOH47PPA2V" accepted.
+2025-12-11 13:14:05.679 +05:30 [DBG] Connection id "0HNHOH47PPA2U" accepted.
+2025-12-11 13:14:05.680 +05:30 [DBG] Connection id "0HNHOH47PPA2V" started.
+2025-12-11 13:14:05.681 +05:30 [DBG] Connection id "0HNHOH47PPA2U" started.
+2025-12-11 13:14:05.702 +05:30 [DBG] Connection id "0HNHOH47PPA2U" received FIN.
+2025-12-11 13:14:05.702 +05:30 [DBG] Connection id "0HNHOH47PPA2V" received FIN.
+2025-12-11 13:14:05.708 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-11 13:14:05.708 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-11 13:14:05.730 +05:30 [DBG] Connection id "0HNHOH47PPA2U" stopped.
+2025-12-11 13:14:05.730 +05:30 [DBG] Connection id "0HNHOH47PPA2V" stopped.
+2025-12-11 13:14:05.733 +05:30 [DBG] Connection id "0HNHOH47PPA2U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-11 13:14:05.733 +05:30 [DBG] Connection id "0HNHOH47PPA2V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-11 13:14:06.096 +05:30 [DBG] Connection id "0HNHOH47PPA30" accepted.
+2025-12-11 13:14:06.097 +05:30 [DBG] Connection id "0HNHOH47PPA30" started.
+2025-12-11 13:14:06.124 +05:30 [DBG] Connection 0HNHOH47PPA30 established using the following protocol: "Tls12"
+2025-12-11 13:14:06.155 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/swagger/index.html - null null
+2025-12-11 13:14:06.213 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-11 13:14:06.227 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-12-11 13:14:06.228 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:14:06.278 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-12-11 13:14:06.286 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-12-11 13:14:06.300 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/swagger/index.html","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":54,"requestBody":null}
+2025-12-11 13:14:06.301 +05:30 [INF] PageVisit recorded: /swagger/index.html 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 
+2025-12-11 13:14:06.303 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2025-12-11 13:14:06.305 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-12-11 13:14:06.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/swagger/index.js - null null
+2025-12-11 13:14:06.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-11 13:14:06.314 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/swagger/index.html - 200 null text/html;charset=utf-8 160.2877ms
+2025-12-11 13:14:06.314 +05:30 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-12-11 13:14:06.317 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:14:06.320 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/_vs/browserLink - null null
+2025-12-11 13:14:06.320 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/swagger/index.js","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":1,"requestBody":null}
+2025-12-11 13:14:06.327 +05:30 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-11 13:14:06.330 +05:30 [INF] PageVisit recorded: /swagger/index.js 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 https://localhost:7281/swagger/index.html
+2025-12-11 13:14:06.334 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 28.0327ms
+2025-12-11 13:14:06.335 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/swagger/index.js - 200 null application/javascript;charset=utf-8 29.0944ms
+2025-12-11 13:14:06.356 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.0764ms
+2025-12-11 13:14:06.400 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/swagger/v1/swagger.json - null null
+2025-12-11 13:14:06.402 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-12-11 13:14:06.403 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:14:06.420 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/swagger/v1/swagger.json","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":14,"requestBody":null}
+2025-12-11 13:14:06.423 +05:30 [INF] PageVisit recorded: /swagger/v1/swagger.json 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 https://localhost:7281/swagger/index.html
+2025-12-11 13:14:06.427 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.9779ms
+2025-12-11 13:14:08.910 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/live - null null
+2025-12-11 13:14:08.920 +05:30 [DBG] 1 candidate(s) found for the request path '/live'
+2025-12-11 13:14:08.921 +05:30 [DBG] Request matched endpoint 'Health checks'
+2025-12-11 13:14:08.923 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-12-11 13:14:08.927 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-11 13:14:08.929 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-11 13:14:08.934 +05:30 [INF] Executing endpoint 'Health checks'
+2025-12-11 13:14:08.937 +05:30 [DBG] Running health checks
+2025-12-11 13:14:08.939 +05:30 [DBG] Running health check self
+2025-12-11 13:14:08.940 +05:30 [DBG] Running health check geo_fallback
+2025-12-11 13:14:08.940 +05:30 [DBG] Running health check geo_primary
+2025-12-11 13:14:08.940 +05:30 [DBG] Running health check email_queue
+2025-12-11 13:14:08.939 +05:30 [DBG] Running health check sql_database
+2025-12-11 13:14:08.945 +05:30 [DBG] Health check self with status "Healthy" completed after 2.2759ms with message 'API Running'
+2025-12-11 13:14:08.946 +05:30 [DBG] Health check email_queue with status "Healthy" completed after 5.8268ms with message 'Queue OK'
+2025-12-11 13:14:08.947 +05:30 [INF] Start processing HTTP request GET http://ip-api.com/
+2025-12-11 13:14:08.948 +05:30 [INF] Start processing HTTP request GET https://ipwho.is/
+2025-12-11 13:14:08.959 +05:30 [INF] Sending HTTP request GET http://ip-api.com/
+2025-12-11 13:14:08.961 +05:30 [INF] Sending HTTP request GET https://ipwho.is/
+2025-12-11 13:14:09.099 +05:30 [INF] Received HTTP response headers after 132.8818ms - 200
+2025-12-11 13:14:09.102 +05:30 [INF] End processing HTTP request after 155.1025ms - 200
+2025-12-11 13:14:09.104 +05:30 [DBG] Health check geo_primary with status "Healthy" completed after 164.2907ms with message 'null'
+2025-12-11 13:14:09.515 +05:30 [DBG] Health check sql_database with status "Healthy" completed after 576.0382ms with message 'null'
+2025-12-11 13:14:09.906 +05:30 [INF] Received HTTP response headers after 944.4093ms - 200
+2025-12-11 13:14:09.908 +05:30 [INF] End processing HTTP request after 961.4042ms - 200
+2025-12-11 13:14:09.911 +05:30 [DBG] Health check geo_fallback with status "Healthy" completed after 971.1724ms with message 'null'
+2025-12-11 13:14:09.916 +05:30 [DBG] Health check processing with combined status "Healthy" completed after 976.8011ms
+2025-12-11 13:14:09.919 +05:30 [INF] Executed endpoint 'Health checks'
+2025-12-11 13:14:09.920 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/live","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":998,"requestBody":null}
+2025-12-11 13:14:09.923 +05:30 [INF] PageVisit recorded: /live 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 
+2025-12-11 13:14:09.924 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/live - 200 null text/plain 1014.4232ms
+2025-12-11 13:14:09.951 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/favicon.ico - null null
+2025-12-11 13:14:09.952 +05:30 [DBG] No candidates found for the request path '/favicon.ico'
+2025-12-11 13:14:09.953 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:14:09.956 +05:30 [DBG] The request path  does not match the path filter
+2025-12-11 13:14:09.957 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-11 13:14:09.957 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-11 13:14:09.958 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/favicon.ico","query":"","statusCode":404,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":2,"requestBody":null}
+2025-12-11 13:14:09.959 +05:30 [INF] PageVisit recorded: /favicon.ico 404 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 https://localhost:7281/live
+2025-12-11 13:14:09.960 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/favicon.ico - 404 0 null 9.5217ms
+2025-12-11 13:14:09.962 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7281/favicon.ico, Response status code: 404
+2025-12-11 13:14:16.648 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/ready - null null
+2025-12-11 13:14:16.652 +05:30 [DBG] 1 candidate(s) found for the request path '/ready'
+2025-12-11 13:14:16.652 +05:30 [DBG] Request matched endpoint 'Health checks'
+2025-12-11 13:14:16.653 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-12-11 13:14:16.655 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-11 13:14:16.656 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-11 13:14:16.658 +05:30 [INF] Executing endpoint 'Health checks'
+2025-12-11 13:14:16.661 +05:30 [DBG] Running health checks
+2025-12-11 13:14:16.663 +05:30 [DBG] Running health check sql_database
+2025-12-11 13:14:16.663 +05:30 [DBG] Running health check geo_primary
+2025-12-11 13:14:16.663 +05:30 [DBG] Running health check geo_fallback
+2025-12-11 13:14:16.663 +05:30 [DBG] Running health check email_queue
+2025-12-11 13:14:16.665 +05:30 [INF] Start processing HTTP request GET https://ipwho.is/
+2025-12-11 13:14:16.666 +05:30 [INF] Start processing HTTP request GET http://ip-api.com/
+2025-12-11 13:14:16.667 +05:30 [DBG] Health check email_queue with status "Healthy" completed after 4.106ms with message 'Queue OK'
+2025-12-11 13:14:16.670 +05:30 [INF] Sending HTTP request GET https://ipwho.is/
+2025-12-11 13:14:16.671 +05:30 [DBG] Health check sql_database with status "Healthy" completed after 8.061ms with message 'null'
+2025-12-11 13:14:16.671 +05:30 [INF] Sending HTTP request GET http://ip-api.com/
+2025-12-11 13:14:16.721 +05:30 [INF] Received HTTP response headers after 41.3608ms - 200
+2025-12-11 13:14:16.721 +05:30 [INF] End processing HTTP request after 56.4742ms - 200
+2025-12-11 13:14:16.722 +05:30 [DBG] Health check geo_primary with status "Healthy" completed after 59.3484ms with message 'null'
+2025-12-11 13:14:17.217 +05:30 [INF] Received HTTP response headers after 535.8343ms - 200
+2025-12-11 13:14:17.218 +05:30 [INF] End processing HTTP request after 552.6145ms - 200
+2025-12-11 13:14:17.220 +05:30 [DBG] Health check geo_fallback with status "Healthy" completed after 556.7513ms with message 'null'
+2025-12-11 13:14:17.221 +05:30 [DBG] Health check processing with combined status "Healthy" completed after 560.0167ms
+2025-12-11 13:14:17.221 +05:30 [INF] Executed endpoint 'Health checks'
+2025-12-11 13:14:17.222 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/ready","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":568,"requestBody":null}
+2025-12-11 13:14:17.223 +05:30 [INF] PageVisit recorded: /ready 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 
+2025-12-11 13:14:17.225 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/ready - 200 null text/plain 576.5457ms
+2025-12-11 13:14:23.580 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/health - null null
+2025-12-11 13:14:23.584 +05:30 [DBG] 1 candidate(s) found for the request path '/health'
+2025-12-11 13:14:23.584 +05:30 [DBG] Request matched endpoint 'Health checks'
+2025-12-11 13:14:23.585 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-12-11 13:14:23.588 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-11 13:14:23.588 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-11 13:14:23.590 +05:30 [INF] Executing endpoint 'Health checks'
+2025-12-11 13:14:23.591 +05:30 [DBG] Running health checks
+2025-12-11 13:14:23.592 +05:30 [DBG] Running health check self
+2025-12-11 13:14:23.592 +05:30 [DBG] Running health check geo_fallback
+2025-12-11 13:14:23.592 +05:30 [DBG] Running health check sql_database
+2025-12-11 13:14:23.592 +05:30 [DBG] Running health check geo_primary
+2025-12-11 13:14:23.593 +05:30 [DBG] Health check self with status "Healthy" completed after 0.9247ms with message 'API Running'
+2025-12-11 13:14:23.593 +05:30 [INF] Start processing HTTP request GET http://ip-api.com/
+2025-12-11 13:14:23.592 +05:30 [DBG] Running health check email_queue
+2025-12-11 13:14:23.594 +05:30 [DBG] Health check sql_database with status "Healthy" completed after 2.7534ms with message 'null'
+2025-12-11 13:14:23.595 +05:30 [INF] Start processing HTTP request GET https://ipwho.is/
+2025-12-11 13:14:23.596 +05:30 [INF] Sending HTTP request GET http://ip-api.com/
+2025-12-11 13:14:23.597 +05:30 [DBG] Health check email_queue with status "Healthy" completed after 5.1605ms with message 'Queue OK'
+2025-12-11 13:14:23.605 +05:30 [INF] Sending HTTP request GET https://ipwho.is/
+2025-12-11 13:14:23.639 +05:30 [INF] Received HTTP response headers after 28.9547ms - 200
+2025-12-11 13:14:23.640 +05:30 [INF] End processing HTTP request after 45.2867ms - 200
+2025-12-11 13:14:23.641 +05:30 [DBG] Health check geo_primary with status "Healthy" completed after 49.0154ms with message 'null'
+2025-12-11 13:14:24.147 +05:30 [INF] Received HTTP response headers after 540.815ms - 200
+2025-12-11 13:14:24.153 +05:30 [INF] End processing HTTP request after 559.7483ms - 200
+2025-12-11 13:14:24.154 +05:30 [DBG] Health check geo_fallback with status "Healthy" completed after 562.7341ms with message 'null'
+2025-12-11 13:14:24.156 +05:30 [DBG] Health check processing with combined status "Healthy" completed after 564.9583ms
+2025-12-11 13:14:24.159 +05:30 [INF] Executed endpoint 'Health checks'
+2025-12-11 13:14:24.160 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/health","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":574,"requestBody":null}
+2025-12-11 13:14:24.161 +05:30 [INF] PageVisit recorded: /health 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 
+2025-12-11 13:14:24.163 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/health - 200 null text/plain 583.2352ms
+2025-12-11 13:14:29.915 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/api/countries - null null
+2025-12-11 13:14:29.918 +05:30 [DBG] No candidates found for the request path '/api/countries'
+2025-12-11 13:14:29.919 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:14:29.919 +05:30 [DBG] The request path  does not match the path filter
+2025-12-11 13:14:29.920 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-11 13:14:29.921 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-11 13:14:29.922 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/api/countries","query":"","statusCode":404,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":2,"requestBody":null}
+2025-12-11 13:14:29.925 +05:30 [INF] PageVisit recorded: /api/countries 404 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 
+2025-12-11 13:14:29.926 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/api/countries - 404 null null 11.0687ms
+2025-12-11 13:14:29.927 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7281/api/countries, Response status code: 404
+2025-12-11 13:14:36.726 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/live - null null
+2025-12-11 13:14:36.729 +05:30 [DBG] 1 candidate(s) found for the request path '/live'
+2025-12-11 13:14:36.729 +05:30 [DBG] Request matched endpoint 'Health checks'
+2025-12-11 13:14:36.731 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-12-11 13:14:36.731 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-11 13:14:36.732 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-11 13:14:36.733 +05:30 [INF] Executing endpoint 'Health checks'
+2025-12-11 13:14:36.734 +05:30 [DBG] Running health checks
+2025-12-11 13:14:36.738 +05:30 [DBG] Running health check sql_database
+2025-12-11 13:14:36.738 +05:30 [DBG] Running health check self
+2025-12-11 13:14:36.738 +05:30 [DBG] Running health check geo_primary
+2025-12-11 13:14:36.738 +05:30 [DBG] Running health check geo_fallback
+2025-12-11 13:14:36.738 +05:30 [DBG] Running health check email_queue
+2025-12-11 13:14:36.739 +05:30 [DBG] Health check sql_database with status "Healthy" completed after 1.5225ms with message 'null'
+2025-12-11 13:14:36.739 +05:30 [DBG] Health check self with status "Healthy" completed after 1.6768ms with message 'API Running'
+2025-12-11 13:14:36.740 +05:30 [INF] Start processing HTTP request GET https://ipwho.is/
+2025-12-11 13:14:36.741 +05:30 [INF] Start processing HTTP request GET http://ip-api.com/
+2025-12-11 13:14:36.741 +05:30 [DBG] Health check email_queue with status "Healthy" completed after 3.6834ms with message 'Queue OK'
+2025-12-11 13:14:36.744 +05:30 [INF] Sending HTTP request GET https://ipwho.is/
+2025-12-11 13:14:36.745 +05:30 [INF] Sending HTTP request GET http://ip-api.com/
+2025-12-11 13:14:36.839 +05:30 [INF] Received HTTP response headers after 92.2608ms - 200
+2025-12-11 13:14:36.844 +05:30 [INF] End processing HTTP request after 104.0074ms - 200
+2025-12-11 13:14:36.846 +05:30 [DBG] Health check geo_primary with status "Healthy" completed after 108.0036ms with message 'null'
+2025-12-11 13:14:37.000 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/swagger/index.html - null null
+2025-12-11 13:14:37.003 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-12-11 13:14:37.003 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:14:37.004 +05:30 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-12-11 13:14:37.005 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-12-11 13:14:37.005 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/swagger/index.html","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":1,"requestBody":null}
+2025-12-11 13:14:37.006 +05:30 [WRN] Health check geo_fallback with status "Degraded" completed after 268.1596ms with message 'null'
+System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at HealthChecks.Uris.UriHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.Uris/UriHealthCheck.cs:line 54
+2025-12-11 13:14:37.006 +05:30 [INF] PageVisit recorded: /swagger/index.html 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 
+2025-12-11 13:14:37.020 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-11 13:14:37.020 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/swagger/index.js - null null
+2025-12-11 13:14:37.050 +05:30 [DBG] Response markup was updated to include Browser Link script injection.
+2025-12-11 13:14:37.050 +05:30 [DBG] Health check processing with combined status "Degraded" completed after 315.4325ms
+2025-12-11 13:14:37.054 +05:30 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-11 13:14:37.055 +05:30 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-12-11 13:14:37.056 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2025-12-11 13:14:37.057 +05:30 [INF] Executed endpoint 'Health checks'
+2025-12-11 13:14:37.057 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/_framework/aspnetcore-browser-refresh.js - 200 16533 application/javascript; charset=utf-8 37.0554ms
+2025-12-11 13:14:37.058 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:14:37.062 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/swagger/index.html - 200 null text/html;charset=utf-8 62.2478ms
+2025-12-11 13:14:37.064 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/live","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":333,"requestBody":null}
+2025-12-11 13:14:37.067 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/swagger/index.js","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":0,"requestBody":null}
+2025-12-11 13:14:37.072 +05:30 [INF] PageVisit recorded: /live 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 
+2025-12-11 13:14:37.073 +05:30 [INF] PageVisit recorded: /swagger/index.js 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 https://localhost:7281/swagger/index.html
+2025-12-11 13:14:37.076 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/live - 200 null text/plain 349.5935ms
+2025-12-11 13:14:37.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/swagger/index.js - 200 null application/javascript;charset=utf-8 58.3448ms
+2025-12-11 13:14:37.114 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/swagger/v1/swagger.json - null null
+2025-12-11 13:14:37.116 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-12-11 13:14:37.117 +05:30 [DBG] Request did not match any endpoints
+2025-12-11 13:14:37.125 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/swagger/v1/swagger.json","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":6,"requestBody":null}
+2025-12-11 13:14:37.126 +05:30 [INF] PageVisit recorded: /swagger/v1/swagger.json 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 https://localhost:7281/swagger/index.html
+2025-12-11 13:14:37.127 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.8474ms
+2025-12-11 13:14:40.260 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7281/api/ContactSubmissions - null null
+2025-12-11 13:14:40.263 +05:30 [DBG] 1 candidate(s) found for the request path '/api/ContactSubmissions'
+2025-12-11 13:14:40.266 +05:30 [DBG] Endpoint 'CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.GetAll (CleanArchitecture.WebApi)' with route pattern 'api/ContactSubmissions' is valid for the request path '/api/ContactSubmissions'
+2025-12-11 13:14:40.267 +05:30 [DBG] Request matched endpoint 'CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.GetAll (CleanArchitecture.WebApi)'
+2025-12-11 13:14:40.268 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-12-11 13:14:40.276 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-11 13:14:40.277 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-11 13:14:40.280 +05:30 [INF] Executing endpoint 'CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.GetAll (CleanArchitecture.WebApi)'
+2025-12-11 13:14:40.293 +05:30 [INF] Route matched with {action = "GetAll", controller = "ContactSubmissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto]]] GetAll() on controller CleanArchitecture.WebApi.Controllers.ContactSubmissionsController (CleanArchitecture.WebApi).
+2025-12-11 13:14:40.295 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-11 13:14:40.298 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-11 13:14:40.299 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-12-11 13:14:40.302 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-11 13:14:40.307 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-12-11 13:14:40.311 +05:30 [DBG] Executing controller factory for controller CleanArchitecture.WebApi.Controllers.ContactSubmissionsController (CleanArchitecture.WebApi)
+2025-12-11 13:14:40.759 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-12-11 13:14:40.781 +05:30 [DBG] Executed controller factory for controller CleanArchitecture.WebApi.Controllers.ContactSubmissionsController (CleanArchitecture.WebApi)
+2025-12-11 13:14:41.328 +05:30 [DBG] The property 'ContactSubmission.CountryId' was created in shadow state because there are no eligible CLR members with a matching name.
+2025-12-11 13:14:41.452 +05:30 [DBG] Entity Framework Core 8.0.1 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.1' with options: None
+2025-12-11 13:14:41.492 +05:30 [DBG] Compiling query expression: 
+'DbSet<ContactSubmission>()
+    .AsNoTracking()
+    .OrderByDescending(x => x.CreatedAt)'
+2025-12-11 13:14:41.646 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<ContactSubmission>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: ContactSubmission.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: ContactSubmission.AdditionalData (string), 1], [Property: ContactSubmission.City (string) MaxLength(150), 2], [Property: ContactSubmission.CountryId (no field, Guid?) Shadow FK Index, 3], [Property: ContactSubmission.CountryName (string) MaxLength(150), 4], [Property: ContactSubmission.CreatedAt (DateTime) Required, 5], [Property: ContactSubmission.DeletedAt (DateTime?), 6], [Property: ContactSubmission.Email (string) MaxLength(200), 7], [Property: ContactSubmission.FirstName (string) MaxLength(150), 8], [Property: ContactSubmission.IpAddress (string), 9], [Property: ContactSubmission.LastName (string) MaxLength(150), 10], [Property: ContactSubmission.Latitude (double?), 11], [Property: ContactSubmission.Longitude (double?), 12], [Property: ContactSubmission.Message (string), 13], [Property: ContactSubmission.Phone (string) MaxLength(50), 14], [Property: ContactSubmission.PhoneCountryCode (string) MaxLength(10), 15], [Property: ContactSubmission.State (string) MaxLength(150), 16], [Property: ContactSubmission.Subject (string) MaxLength(255), 17], [Property: ContactSubmission.UpdatedAt (DateTime?), 18], [Property: ContactSubmission.UserAgent (string), 19] }
+        SELECT c.Id, c.AdditionalData, c.City, c.CountryId, c.CountryName, c.CreatedAt, c.DeletedAt, c.Email, c.FirstName, c.IpAddress, c.LastName, c.Latitude, c.Longitude, c.Message, c.Phone, c.PhoneCountryCode, c.State, c.Subject, c.UpdatedAt, c.UserAgent
+        FROM ContactSubmissions AS c
+        ORDER BY c.CreatedAt DESC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ContactSubmission>, 
+    CleanArchitecture.Infrastructure.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-12-11 13:14:41.675 +05:30 [DBG] Creating DbConnection.
+2025-12-11 13:14:41.679 +05:30 [DBG] Created DbConnection. (2ms).
+2025-12-11 13:14:41.681 +05:30 [DBG] Opening connection to database 'ApplicationDevelopentEmbryonNewDB' on server 'DESKTOP-8L07VS8'.
+2025-12-11 13:14:41.683 +05:30 [DBG] Opened connection to database 'ApplicationDevelopentEmbryonNewDB' on server 'DESKTOP-8L07VS8'.
+2025-12-11 13:14:41.686 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-11 13:14:41.689 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-12-11 13:14:41.692 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2025-12-11 13:14:41.697 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AdditionalData], [c].[City], [c].[CountryId], [c].[CountryName], [c].[CreatedAt], [c].[DeletedAt], [c].[Email], [c].[FirstName], [c].[IpAddress], [c].[LastName], [c].[Latitude], [c].[Longitude], [c].[Message], [c].[Phone], [c].[PhoneCountryCode], [c].[State], [c].[Subject], [c].[UpdatedAt], [c].[UserAgent]
+FROM [ContactSubmissions] AS [c]
+ORDER BY [c].[CreatedAt] DESC
+2025-12-11 13:14:41.707 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AdditionalData], [c].[City], [c].[CountryId], [c].[CountryName], [c].[CreatedAt], [c].[DeletedAt], [c].[Email], [c].[FirstName], [c].[IpAddress], [c].[LastName], [c].[Latitude], [c].[Longitude], [c].[Message], [c].[Phone], [c].[PhoneCountryCode], [c].[State], [c].[Subject], [c].[UpdatedAt], [c].[UserAgent]
+FROM [ContactSubmissions] AS [c]
+ORDER BY [c].[CreatedAt] DESC
+2025-12-11 13:14:41.725 +05:30 [DBG] Closing data reader to 'ApplicationDevelopentEmbryonNewDB' on server 'DESKTOP-8L07VS8'.
+2025-12-11 13:14:41.729 +05:30 [DBG] A data reader for 'ApplicationDevelopentEmbryonNewDB' on server 'DESKTOP-8L07VS8' is being disposed after spending 14ms reading results.
+2025-12-11 13:14:41.731 +05:30 [DBG] Closing connection to database 'ApplicationDevelopentEmbryonNewDB' on server 'DESKTOP-8L07VS8'.
+2025-12-11 13:14:41.733 +05:30 [DBG] Closed connection to database 'ApplicationDevelopentEmbryonNewDB' on server 'DESKTOP-8L07VS8' (1ms).
+2025-12-11 13:14:41.737 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-11 13:14:41.741 +05:30 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-12-11 13:14:41.743 +05:30 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-12-11 13:14:41.744 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-12-11 13:14:41.745 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-12-11 13:14:41.745 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-11 13:14:41.746 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CleanArchitecture.Application.DTOs.Contact.ContactSubmissionDto, CleanArchitecture.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-11 13:14:41.765 +05:30 [INF] Executed action CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.GetAll (CleanArchitecture.WebApi) in 1453.1852ms
+2025-12-11 13:14:41.766 +05:30 [INF] Executed endpoint 'CleanArchitecture.WebApi.Controllers.ContactSubmissionsController.GetAll (CleanArchitecture.WebApi)'
+2025-12-11 13:14:41.771 +05:30 [INF] HTTP Request Log: {"method":"GET","path":"/api/ContactSubmissions","query":"","statusCode":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","durationMs":1502,"requestBody":null}
+2025-12-11 13:14:41.772 +05:30 [INF] PageVisit recorded: /api/ContactSubmissions 200 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 https://localhost:7281/swagger/index.html
+2025-12-11 13:14:41.777 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2025-12-11 13:14:41.781 +05:30 [DBG] Disposing connection to database 'ApplicationDevelopentEmbryonNewDB' on server 'DESKTOP-8L07VS8'.
+2025-12-11 13:14:41.782 +05:30 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-12-11 13:14:41.785 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7281/api/ContactSubmissions - 200 null application/json 1524.6952ms
+2025-12-11 13:16:08.958 +05:30 [DBG] HttpMessageHandler expired after 120000ms for client 'geo_primary'
+2025-12-11 13:16:08.958 +05:30 [DBG] HttpMessageHandler expired after 120000ms for client 'geo_fallback'
+2025-12-11 13:16:18.970 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-11 13:16:18.973 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0357ms - processed: 0 items - remaining: 2 items
+2025-12-11 13:16:28.983 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-11 13:16:28.984 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 2 items
+2025-12-11 13:16:38.987 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 2 items
+2025-12-11 13:16:38.988 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 2 items
+2025-12-11 13:16:40.787 +05:30 [DBG] HttpMessageHandler expired after 120000ms for client ''
+2025-12-11 13:16:49.002 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:16:49.003 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0044ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:16:59.008 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:16:59.010 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0042ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:17:09.013 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:17:09.014 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0025ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:17:19.020 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:17:19.023 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0026ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:17:29.037 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:17:29.043 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0039ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:17:39.053 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:17:39.054 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0026ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:17:49.059 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:17:49.060 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0039ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:17:59.071 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:17:59.073 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0027ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:18:09.079 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:18:09.080 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0036ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:18:19.092 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:18:19.094 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0032ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:18:29.100 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:18:29.103 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0024ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:18:39.115 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:18:39.115 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0026ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:18:49.126 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:18:49.128 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.003ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:18:59.140 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:18:59.141 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.004ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:19:09.150 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:19:09.150 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0566ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:19:19.157 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:19:19.159 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0034ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:19:29.166 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:19:29.167 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:19:39.170 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:19:39.171 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0027ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:19:49.184 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:19:49.186 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0616ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:19:59.198 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:19:59.200 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0025ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:20:09.212 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:20:09.213 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:20:19.216 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:20:19.219 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:20:29.220 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:20:29.222 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0022ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:20:39.239 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:20:39.240 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.002ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:20:49.252 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:20:49.254 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.002ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:20:59.268 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:20:59.270 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:21:09.273 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:21:09.275 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0025ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:21:19.278 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:21:19.280 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.002ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:21:29.286 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:21:29.288 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0022ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:21:39.301 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:21:39.303 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:21:49.314 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:21:49.318 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:21:59.326 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:21:59.328 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0014ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:22:09.338 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:22:09.342 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:22:19.355 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:22:19.357 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:22:29.360 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:22:29.361 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0014ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:22:39.371 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:22:39.373 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:22:49.385 +05:30 [DBG] Starting HttpMessageHandler cleanup cycle with 3 items
+2025-12-11 13:22:49.387 +05:30 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0018ms - processed: 0 items - remaining: 3 items
+2025-12-11 13:25:51.622 +05:30 [INF] 🚀 Embryon API started in Development
+2025-12-11 13:25:51.656 +05:30 [INF] 🌍 GeoLocation Enabled
+2025-12-11 13:25:51.663 +05:30 [INF] Email background service started.
+2025-12-11 13:27:14.684 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-11 13:27:14.685 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-11 13:27:14.859 +05:30 [INF] GeoInfo Received → IP: 127.0.0.1, City: Local, Region: Development, Country: Local Development, Latitude: null, Longitude: null
+2025-12-11 13:27:14.919 +05:30 [INF] CAPTCHA validated successfully for IP 127.0.0.1
+2025-12-11 13:27:15.869 +05:30 [INF] Contact submission stored: ID="f930a2ec-e803-4132-95a9-1e36edd21a60", Email=saurabh.lodhi@monkoutsourcing.com, IP=127.0.0.1, Lat=null, Lon=null
+2025-12-11 13:27:15.875 +05:30 [DBG] Enqueued email to saurabh.lodhi@monkoutsourcing.com. Type=contact_user
+2025-12-11 13:27:15.875 +05:30 [INF] User confirmation email queued → saurabh.lodhi@monkoutsourcing.com
+2025-12-11 13:27:15.877 +05:30 [DBG] Enqueued email to admin@embryon.test. Type=contact_admin
+2025-12-11 13:27:15.877 +05:30 [INF] Admin notification email queued → admin@embryon.test
+2025-12-11 13:27:15.919 +05:30 [INF] HTTP Request Log: {"method":"POST","path":"/api/ContactSubmissions","query":"","statusCode":201,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1 Edg/143.0.0.0","durationMs":1242,"requestBody":"{\u0022firstName\u0022:\u0022***masked***\u0022,\u0022lastName\u0022:\u0022***masked***\u0022,\u0022email\u0022:\u0022***masked***\u0022,\u0022phone\u0022:\u0022***masked***\u0022,\u0022phoneCountryCode\u0022:\u0022\\u002B91\u0022,\u0022countryName\u0022:\u0022India\u0022,\u0022state\u0022:\u0022Delhi\u0022,\u0022city\u0022:\u0022Delhi\u0022,\u0022subject\u0022:\u0022***masked***\u0022,\u0022message\u0022:\u0022***masked***\u0022,\u0022captchaToken\u0022:\u0022BYPASS_TOKEN_FOR_DEV\u0022,\u0022latitude\u0022:28.6195,\u0022longitude\u0022:77.3149}"}
+2025-12-11 13:27:15.920 +05:30 [INF] PageVisit recorded: /api/ContactSubmissions 201 ::1 Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1 Edg/143.0.0.0 http://localhost:5173/
+2025-12-11 13:27:19.874 +05:30 [ERR] Failed to send email to saurabh.lodhi@monkoutsourcing.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-11 13:27:19.955 +05:30 [WRN] Failed to send email to saurabh.lodhi@monkoutsourcing.com attempt 1. Backoff 5s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-11 13:27:28.457 +05:30 [ERR] Failed to send email to saurabh.lodhi@monkoutsourcing.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-11 13:27:28.510 +05:30 [WRN] Failed to send email to saurabh.lodhi@monkoutsourcing.com attempt 2. Backoff 10s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-11 13:27:41.878 +05:30 [ERR] Failed to send email to saurabh.lodhi@monkoutsourcing.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-11 13:27:41.932 +05:30 [WRN] Failed to send email to saurabh.lodhi@monkoutsourcing.com attempt 3. Backoff 20s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-11 13:28:01.956 +05:30 [ERR] Failed to deliver email to saurabh.lodhi@monkoutsourcing.com after 3 attempts
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-11 13:28:05.463 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-11 13:28:05.517 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 1. Backoff 5s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-11 13:28:14.118 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-11 13:28:14.172 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 2. Backoff 10s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-11 13:28:27.755 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-11 13:28:27.807 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 3. Backoff 20s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-11 13:28:47.826 +05:30 [ERR] Failed to deliver email to admin@embryon.test after 3 attempts
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDem

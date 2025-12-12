@@ -1,0 +1,423 @@
+2025-12-12 10:35:14.501 +05:30 [INF] 🚀 Embryon API started in Development
+2025-12-12 10:35:14.533 +05:30 [INF] 🌍 GeoLocation Enabled
+2025-12-12 10:35:14.541 +05:30 [INF] Email background service started.
+2025-12-12 10:36:22.222 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-12 10:36:22.222 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-12 10:36:22.393 +05:30 [INF] GeoInfo Received → IP: 127.0.0.1, City: Local, Region: Development, Country: Local Development, Latitude: null, Longitude: null
+2025-12-12 10:36:22.462 +05:30 [INF] CAPTCHA validated successfully for IP 127.0.0.1
+2025-12-12 10:36:23.369 +05:30 [INF] Contact submission stored: ID="bc9e66e2-22cd-4e4e-98af-bb1d2fcd9062", Email=saurabh.lodhi@monkoutsourcing.com, IP=127.0.0.1, Lat=null, Lon=null
+2025-12-12 10:36:23.373 +05:30 [DBG] Enqueued email to saurabh.lodhi@monkoutsourcing.com. Type=contact_user
+2025-12-12 10:36:23.373 +05:30 [INF] User confirmation email queued → saurabh.lodhi@monkoutsourcing.com
+2025-12-12 10:36:23.374 +05:30 [DBG] Enqueued email to admin@embryon.test. Type=contact_admin
+2025-12-12 10:36:23.375 +05:30 [INF] Admin notification email queued → admin@embryon.test
+2025-12-12 10:36:23.411 +05:30 [INF] HTTP Request Log: {"method":"POST","path":"/api/ContactSubmissions","query":"","statusCode":201,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","durationMs":1191,"requestBody":"{\u0022firstName\u0022:\u0022***masked***\u0022,\u0022lastName\u0022:\u0022***masked***\u0022,\u0022email\u0022:\u0022***masked***\u0022,\u0022phone\u0022:\u0022***masked***\u0022,\u0022phoneCountryCode\u0022:\u0022\\u002B91\u0022,\u0022countryName\u0022:\u0022India\u0022,\u0022state\u0022:\u0022Delhi\u0022,\u0022city\u0022:\u0022Delhi\u0022,\u0022subject\u0022:\u0022***masked***\u0022,\u0022message\u0022:\u0022***masked***\u0022,\u0022captchaToken\u0022:\u0022BYPASS_TOKEN_FOR_DEV\u0022,\u0022latitude\u0022:28.6195,\u0022longitude\u0022:77.3149}"}
+2025-12-12 10:36:23.413 +05:30 [INF] PageVisit recorded: /api/ContactSubmissions 201 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0 http://localhost:5173/
+2025-12-12 10:36:26.645 +05:30 [ERR] Failed to send email to saurabh.lodhi@monkoutsourcing.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 10:36:26.724 +05:30 [WRN] Failed to send email to saurabh.lodhi@monkoutsourcing.com attempt 1. Backoff 5s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 10:36:34.856 +05:30 [ERR] Failed to send email to saurabh.lodhi@monkoutsourcing.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 10:36:34.910 +05:30 [WRN] Failed to send email to saurabh.lodhi@monkoutsourcing.com attempt 2. Backoff 10s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 10:36:47.762 +05:30 [ERR] Failed to send email to saurabh.lodhi@monkoutsourcing.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, Cancellation2025-12-12 11:03:52.905 +05:30 [INF] 🚀 Embryon API started in Development
+2025-12-12 11:03:52.939 +05:30 [INF] 🌍 GeoLocation Enabled
+2025-12-12 11:03:52.946 +05:30 [INF] Email background service started.
+2025-12-12 11:04:41.344 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-12 11:04:41.345 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-12 11:04:41.510 +05:30 [INF] GeoInfo Received → IP: 127.0.0.1, City: Local, Region: Development, Country: Local Development, Latitude: null, Longitude: null
+2025-12-12 11:04:41.582 +05:30 [INF] CAPTCHA validated successfully for IP 127.0.0.1
+2025-12-12 11:04:42.475 +05:30 [INF] Contact submission stored: ID="a3b398f8-03f1-42b7-8147-d3cf20b5a3c1", Email=saurabh.lodhi@monkoutsourcing.com, IP=127.0.0.1, Lat=null, Lon=null
+2025-12-12 11:04:42.480 +05:30 [DBG] Enqueued email to saurabh.lodhi@monkoutsourcing.com. Type=contact_user
+2025-12-12 11:04:42.480 +05:30 [INF] User confirmation email queued → saurabh.lodhi@monkoutsourcing.com
+2025-12-12 11:04:42.481 +05:30 [DBG] Enqueued email to admin@embryon.test. Type=contact_admin
+2025-12-12 11:04:42.482 +05:30 [INF] Admin notification email queued → admin@embryon.test
+2025-12-12 11:04:42.517 +05:30 [INF] HTTP Request Log: {"method":"POST","path":"/api/ContactSubmissions","query":"","statusCode":201,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","durationMs":1175,"requestBody":"{\u0022firstName\u0022:\u0022***masked***\u0022,\u0022lastName\u0022:\u0022***masked***\u0022,\u0022email\u0022:\u0022***masked***\u0022,\u0022phone\u0022:\u0022***masked***\u0022,\u0022phoneCountryCode\u0022:\u0022\\u002B91\u0022,\u0022countryName\u0022:\u0022India\u0022,\u0022state\u0022:\u0022Delhi\u0022,\u0022city\u0022:\u0022Delhi\u0022,\u0022subject\u0022:\u0022***masked***\u0022,\u0022message\u0022:\u0022***masked***\u0022,\u0022captchaToken\u0022:\u0022BYPASS_TOKEN_FOR_DEV\u0022,\u0022latitude\u0022:28.6195,\u0022longitude\u0022:77.3149}"}
+2025-12-12 11:04:42.518 +05:30 [INF] PageVisit recorded: /api/ContactSubmissions 201 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0 http://localhost:5173/
+2025-12-12 11:04:46.205 +05:30 [ERR] Failed to send email to saurabh.lodhi@monkoutsourcing.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:04:46.283 +05:30 [WRN] Failed to send email to saurabh.lodhi@monkoutsourcing.com attempt 1. Backoff 5s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:04:54.754 +05:30 [ERR] Failed to send email to saurabh.lodhi@monkoutsourcing.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:04:54.808 +05:30 [WRN] Failed to send email to saurabh.lodhi@monkoutsourcing.com attempt 2. Backoff 10s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:05:08.293 +05:30 [ERR] Failed to send email to saurabh.lodhi@monkoutsourcing.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:05:08.348 +05:30 [WRN] Failed to send email to saurabh.lodhi@monkoutsourcing.com attempt 3. Backoff 20s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:05:28.371 +05:30 [ERR] Failed to deliver email to saurabh.lodhi@monkoutsourcing.com after 3 attempts
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:05:31.990 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:05:32.044 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 1. Backoff 5s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:05:40.511 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:05:40.565 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 2. Backoff 10s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:05:54.154 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:05:54.205 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 3. Backoff 20s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:06:14.222 +05:30 [ERR] Failed to deliver email to admin@embryon.test after 3 attempts
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTex2025-12-12 11:15:08.881 +05:30 [INF] 🚀 Embryon API started in Development
+2025-12-12 11:15:08.913 +05:30 [INF] 🌍 GeoLocation Enabled
+2025-12-12 11:15:08.922 +05:30 [INF] Email background service started.
+2025-12-12 11:15:59.831 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-12 11:15:59.832 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-12 11:16:00.001 +05:30 [INF] GeoInfo Received → IP: 127.0.0.1, City: Local, Region: Development, Country: Local Development, Latitude: null, Longitude: null
+2025-12-12 11:16:15.657 +05:30 [INF] CAPTCHA validated successfully for IP 127.0.0.1
+2025-12-12 11:16:16.531 +05:30 [INF] Contact submission stored: ID="22eddc98-f478-4c34-8a18-488f3cdf1755", Email=from@gmail.com, IP=127.0.0.1, Lat=28.6195, Lon=77.3149
+2025-12-12 11:16:16.537 +05:30 [DBG] Enqueued email to from@gmail.com. Type=contact_user
+2025-12-12 11:16:16.538 +05:30 [INF] User confirmation email queued → from@gmail.com
+2025-12-12 11:16:16.539 +05:30 [DBG] Enqueued email to admin@embryon.test. Type=contact_admin
+2025-12-12 11:16:16.540 +05:30 [INF] Admin notification email queued → admin@embryon.test
+2025-12-12 11:16:18.800 +05:30 [INF] HTTP Request Log: {"method":"POST","path":"/api/ContactSubmissions","query":"","statusCode":201,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","durationMs":18973,"requestBody":"{\u0022firstName\u0022:\u0022***masked***\u0022,\u0022lastName\u0022:\u0022***masked***\u0022,\u0022email\u0022:\u0022***masked***\u0022,\u0022phone\u0022:\u0022***masked***\u0022,\u0022phoneCountryCode\u0022:\u0022\\u002B91\u0022,\u0022countryName\u0022:\u0022India\u0022,\u0022state\u0022:\u0022Delhi\u0022,\u0022city\u0022:\u0022Delhi\u0022,\u0022subject\u0022:\u0022***masked***\u0022,\u0022message\u0022:\u0022***masked***\u0022,\u0022captchaToken\u0022:\u0022BYPASS_TOKEN_FOR_DEV\u0022,\u0022latitude\u0022:28.6195,\u0022longitude\u0022:77.3149}"}
+2025-12-12 11:16:18.802 +05:30 [INF] PageVisit recorded: /api/ContactSubmissions 201 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0 http://localhost:5173/
+2025-12-12 11:16:22.045 +05:30 [ERR] Failed to send email to from@gmail.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:16:22.112 +05:30 [WRN] Failed to send email to from@gmail.com attempt 1. Backoff 5s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:16:30.189 +05:30 [ERR] Failed to send email to from@gmail.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:16:30.243 +05:30 [WRN] Failed to send email to from@gmail.com attempt 2. Backoff 10s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:16:43.266 +05:30 [ERR] Failed to send email to from@gmail.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:16:43.318 +05:30 [WRN] Failed to send email to from@gmail.com attempt 3. Backoff 20s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:17:03.340 +05:30 [ERR] Failed to deliver email to from@gmail.com after 3 attempts
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:17:06.317 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:17:06.368 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 1. Backoff 5s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:17:14.181 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:17:14.233 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 2. Backoff 10s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:17:27.777 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:17:27.827 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 3. Backoff 20s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:17:47.844 +05:30 [ERR] Failed to deliver email to admin@embryon.test after 3 attempts
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Too many failed login attempts
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSend2025-12-12 11:31:59.912 +05:30 [INF] 🚀 Embryon API started in Development
+2025-12-12 11:31:59.947 +05:30 [INF] 🌍 GeoLocation Enabled
+2025-12-12 11:31:59.955 +05:30 [INF] Email background service started.
+2025-12-12 11:32:51.441 +05:30 [INF] 📡 Client IP detected: 127.0.0.1
+2025-12-12 11:32:51.442 +05:30 [WRN] Local/private IP detected. Skipping geo lookup. IP: 127.0.0.1
+2025-12-12 11:32:51.693 +05:30 [INF] GeoInfo Received → IP: 127.0.0.1, City: Local, Region: Development, Country: Local Development, Latitude: null, Longitude: null
+2025-12-12 11:32:58.160 +05:30 [DBG] Enqueued email to Automapperfrom@gmail.com. Type=contact_user
+2025-12-12 11:32:58.162 +05:30 [DBG] Enqueued email to admin@embryon.test. Type=contact_admin
+2025-12-12 11:32:58.197 +05:30 [INF] HTTP Request Log: {"method":"POST","path":"/api/ContactSubmissions","query":"","statusCode":201,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","durationMs":6759,"requestBody":"{\u0022firstName\u0022:\u0022***masked***\u0022,\u0022lastName\u0022:\u0022***masked***\u0022,\u0022email\u0022:\u0022***masked***\u0022,\u0022phone\u0022:\u0022***masked***\u0022,\u0022phoneCountryCode\u0022:\u0022\\u002B91\u0022,\u0022countryName\u0022:\u0022India\u0022,\u0022state\u0022:\u0022Delhi\u0022,\u0022city\u0022:\u0022Delhi\u0022,\u0022subject\u0022:\u0022***masked***\u0022,\u0022message\u0022:\u0022***masked***\u0022,\u0022captchaToken\u0022:\u0022BYPASS_TOKEN_FOR_DEV\u0022,\u0022latitude\u0022:28.6195,\u0022longitude\u0022:77.3149}"}
+2025-12-12 11:32:58.198 +05:30 [INF] PageVisit recorded: /api/ContactSubmissions 201 ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0 http://localhost:5173/
+2025-12-12 11:33:01.246 +05:30 [ERR] Failed to send email to Automapperfrom@gmail.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:33:01.323 +05:30 [WRN] Failed to send email to Automapperfrom@gmail.com attempt 1. Backoff 5s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:33:09.343 +05:30 [ERR] Failed to send email to Automapperfrom@gmail.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:33:09.396 +05:30 [WRN] Failed to send email to Automapperfrom@gmail.com attempt 2. Backoff 10s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:33:22.288 +05:30 [ERR] Failed to send email to Automapperfrom@gmail.com
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:33:22.339 +05:30 [WRN] Failed to send email to Automapperfrom@gmail.com attempt 3. Backoff 20s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:33:42.365 +05:30 [ERR] Failed to deliver email to Automapperfrom@gmail.com after 3 attempts
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:33:45.454 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:33:45.507 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 1. Backoff 5s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:33:53.406 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+2025-12-12 11:33:53.458 +05:30 [WRN] Failed to send email to admin@embryon.test attempt 2. Backoff 10s
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected: 5.7.0 Invalid credentials
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.SendCommandAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendCommandInternalAsync(String command, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at CleanArchitecture.Infrastructure.Services.MailKitEmailSender.SendAsync(String fromName, String fromEmail, String toEmail, String subject, String htmlMessage, String plainTextMessage) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.Infrastructure\Services\MailKitEmailSender.cs:line 60
+   at CleanArchitecture.WebApi.BackgroundServices.EmailSenderBackgroundService.ProcessEmailAsync(QueuedEmail queued, CancellationToken cancellationToken) in D:\3Dec2025\CleanArchitectureSampleCode\CleanArchitectureDemo-main\CleanArchitectureDemo-main\CleanArchitecture\CleanArchitecture.WebApi\BackgroundServices\EmailSenderBackgroundService.cs:line 91
+2025-12-12 11:34:06.962 +05:30 [ERR] Failed to send email to admin@embryon.test
+MailKit.Net.Smtp.SmtpP

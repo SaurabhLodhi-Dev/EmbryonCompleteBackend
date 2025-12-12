@@ -12,10 +12,58 @@ using CleanArchitecture.WebApi.Extensions;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.OpenApi.Models;
+using Serilog;
+using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+// Configure Serilog immediately so any startup logs go to Serilog
+Log.Logger = new LoggerConfiguration()
+    // Global minimum level
+    .MinimumLevel.Is(builder.Environment.IsDevelopment() ? LogEventLevel.Debug : LogEventLevel.Information)
+
+    // Reduce Microsoft & ASP.NET noise
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+    .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
+    .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Error)
+    .MinimumLevel.Override("System.Net.Http.HttpClient", LogEventLevel.Warning)
+    .MinimumLevel.Override("HealthChecks", LogEventLevel.Warning)
+
+    .Enrich.FromLogContext()
+
+    // === Filtering noisy endpoints ===
+    .Filter.ByExcluding(log =>
+        log.Properties.ContainsKey("RequestPath") &&
+        (
+            log.Properties["RequestPath"].ToString().Contains("/swagger") ||
+            log.Properties["RequestPath"].ToString().Contains("favicon.ico") ||
+            log.Properties["RequestPath"].ToString().Contains("_framework") ||
+            log.Properties["RequestPath"].ToString().Contains("browserLink") ||
+            log.Properties["RequestPath"].ToString().Contains("/live") ||
+            log.Properties["RequestPath"].ToString().Contains("/ready") ||
+            log.Properties["RequestPath"].ToString().Contains("/health")
+        )
+    )
+
+    .WriteTo.Console()
+
+    // Rolling logs for 30 days, 10 MB each
+    .WriteTo.File(
+        path: "Logs/embryon-.log",
+        rollingInterval: RollingInterval.Day,
+        retainedFileCountLimit: 30,
+        fileSizeLimitBytes: 10 * 1024 * 1024,
+        rollOnFileSizeLimit: true,
+        buffered: true)
+
+    .CreateLogger();
+
+// Tell Generic Host to use Serilog
+builder.Host.UseSerilog();
 
 // =====================================================
 //     IMPORTANT: Disable Kestrel Server header early
@@ -30,13 +78,13 @@ builder.WebHost.ConfigureKestrel(options =>
 //                LOGGING CONFIGURATION
 // =====================================================
 
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
+//builder.Logging.ClearProviders();
+//builder.Logging.AddConsole();
 
-builder.Logging.AddFile("Logs/embryon-log-{Date}.txt",
-    minimumLevel: builder.Environment.IsDevelopment()
-        ? LogLevel.Information
-        : LogLevel.Warning);
+//builder.Logging.AddFile("Logs/embryon-log-{Date}.txt",
+//    minimumLevel: builder.Environment.IsDevelopment()
+//        ? LogLevel.Information
+//        : LogLevel.Warning);
 
 // =====================================================
 //           REQUIRED FOR REAL CLIENT IP IN PROD
@@ -138,12 +186,36 @@ builder.Services.AddCors(options =>
 var dbConnection = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException("Missing DefaultConnection");
 
+//builder.Services.AddHealthChecks()
+//    .AddCheck("self", () => HealthCheckResult.Healthy("API Running"))
+//    .AddSqlServer(dbConnection, name: "sql_database", failureStatus: HealthStatus.Unhealthy)
+//    .AddUrlGroup(new Uri("https://ipwho.is/"), name: "geo_primary", failureStatus: HealthStatus.Degraded)
+//    .AddUrlGroup(new Uri("http://ip-api.com/"), name: "geo_fallback", failureStatus: HealthStatus.Degraded)
+//    .AddCheck<EmailQueueHealthCheck>("email_queue", failureStatus: HealthStatus.Degraded);
+
 builder.Services.AddHealthChecks()
     .AddCheck("self", () => HealthCheckResult.Healthy("API Running"))
-    .AddSqlServer(dbConnection, name: "sql_database", failureStatus: HealthStatus.Unhealthy)
-    .AddUrlGroup(new Uri("https://ipwho.is/"), name: "geo_primary", failureStatus: HealthStatus.Degraded)
-    .AddUrlGroup(new Uri("http://ip-api.com/"), name: "geo_fallback", failureStatus: HealthStatus.Degraded)
-    .AddCheck<EmailQueueHealthCheck>("email_queue", failureStatus: HealthStatus.Degraded);
+    .AddSqlServer(dbConnection, name: "sql_database", failureStatus: HealthStatus.Unhealthy, tags: new[] { "ready" })
+    .AddUrlGroup(new Uri("https://ipwho.is/"), name: "geo_primary", failureStatus: HealthStatus.Degraded, tags: new[] { "ready" })
+    .AddUrlGroup(new Uri("http://ip-api.com/"), name: "geo_fallback", failureStatus: HealthStatus.Degraded, tags: new[] { "ready" })
+    .AddCheck<EmailQueueHealthCheck>("email_queue", failureStatus: HealthStatus.Degraded, tags: new[] { "ready" });
+
+
+
+// ===============================
+//          RATE LIMITING
+// ===============================
+builder.Services.AddRateLimiter(options =>
+{
+    options.AddFixedWindowLimiter("ContactLimiter", config =>
+    {
+        config.PermitLimit = 10;
+        config.Window = TimeSpan.FromMinutes(1);
+        config.QueueProcessingOrder =
+            System.Threading.RateLimiting.QueueProcessingOrder.OldestFirst;
+        config.QueueLimit = 0;
+    });
+});
 
 var app = builder.Build();
 
@@ -272,13 +344,14 @@ app.UseCors("AllowUI");
 
 // Authentication (if enabled)
 // app.UseAuthentication();
-
+app.UseRateLimiter();
 app.UseAuthorization();
+
 
 // Wrap API responses (should be before controllers so it intercepts JSON)
 app.UseResponseWrapper();
 
-// Controller mapping
+//// Controller mapping
 app.MapControllers();
 
 // Health checks
